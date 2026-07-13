@@ -403,7 +403,9 @@
     <strong>Note:</strong> NADRA revises its fee structure from time to time. These figures were verified against multiple current sources but always confirm the exact amount on the official Pak-Identity portal (id.nadra.gov.pk) or at your nearest NADRA Registration Center before paying.
   </div>
 </main>
-
+<button onclick="findNadraCenter()">
+📍 Find Nearest NADRA Center
+</button>
 <footer>
   NADRA Fee Guide is an independent information resource and is not affiliated with or endorsed by NADRA.
 </footer>
@@ -431,6 +433,7 @@ function updateCalc(){
 docEl.addEventListener('change', updateCalc);
 speedEl.addEventListener('change', updateCalc);
 updateCalc();
+  
 
 const FAQS = [
   { q: "Is Normal processing free for a first-time CNIC?", a: "For the very first CNIC application (not Smart CNIC), Normal processing is free. Smart CNIC — which almost everyone applies for now — starts at PKR 750 for Normal." },
@@ -448,6 +451,16 @@ FAQS.forEach(item => {
   faqList.appendChild(div);
 });
 </script>
-
+function findNadraCenter() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
+      window.open(`https://www.google.com/maps/search/NADRA+Registration+Center/@${lat},${lng},15z`);
+    });
+  } else {
+    alert("Location is not supported.");
+  }
+}
 </body>
 </html>
