@@ -450,16 +450,19 @@ FAQS.forEach(item => {
   div.querySelector('.faq-q').onclick = () => div.classList.toggle('open');
   faqList.appendChild(div);
 });
-</script>
+<script>
 function findNadraCenter() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       const lat = position.coords.latitude;
       const lng = position.coords.longitude;
-      window.open(`https://www.google.com/maps/search/NADRA+Registration+Center/@${lat},${lng},15z`);
+      window.open("https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center&center=" + lat + "," + lng);
     });
   } else {
     alert("Location is not supported.");
+  }
+}
+</script>
   }
 }
 </body>
