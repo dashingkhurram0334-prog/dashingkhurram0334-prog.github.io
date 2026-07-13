@@ -22,7 +22,7 @@
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
-  body{
+  body}
     background:var(--paper);
     color:var(--ink);
     font-family:'Inter', sans-serif;
@@ -57,7 +57,23 @@
   }
   .site-title{
     font-family:'Fraunces', serif;
-    font-weight:600;
+  <section style="text-align:center;padding:20px;">
+    <h2>Nearest NADRA Center</h2>
+    <p>Click the button below to find the nearest NADRA Registration Center.</p>
+
+    <button onclick="findNadraCenter()" style="
+        background:#0b7a3d;
+        color:#fff;
+        border:none;
+        padding:15px 25px;
+        font-size:18px;
+        border-radius:8px;
+        cursor:pointer;">
+        📍 Find Nearest NADRA Center
+    </button>
+
+    <p id="status" style="margin-top:15px;"></p>
+</section>  font-weight:600;
     font-size:18px;
     letter-spacing:0.2px;
   }
