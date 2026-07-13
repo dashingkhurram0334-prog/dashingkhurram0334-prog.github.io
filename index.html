@@ -22,7 +22,53 @@
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
-  body}
+  body}<section style="text-align:center;padding:20px;">
+    <h2>Nearest NADRA Center</h2>
+    <p>Click the button below to find the nearest NADRA Registration Center.</p>
+
+    <button onclick="findNadraCenter()" style="
+        background:#0b7a3d;
+        color:#fff;
+        border:none;
+        padding:15px 25px;
+        font-size:18px;
+        border-radius:8px;
+        cursor:pointer;">
+        📍 Find Nearest NADRA Center
+    </button>
+
+    <p id="status" style="margin-top:15px;"></p>
+</section>
+
+<script>
+function findNadraCenter() {
+    const status = document.getElementById("status");
+
+    if (!navigator.geolocation) {
+        status.innerHTML = "Your browser does not support location.";
+        return;
+    }
+
+    status.innerHTML = "Getting your location...";
+
+    navigator.geolocation.getCurrentPosition(
+        function(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+
+            window.open(
+                `https://www.google.com/maps/search/NADRA+Registration+Center/@${lat},${lng},15z`,
+                "_blank"
+            );
+
+            status.innerHTML = "Opening nearest NADRA centers...";
+        },
+        function(error) {
+            status.innerHTML = "Please allow location access to find nearby NADRA centers.";
+        }
+    );
+}
+</script>
     background:var(--paper);
     color:var(--ink);
     font-family:'Inter', sans-serif;
