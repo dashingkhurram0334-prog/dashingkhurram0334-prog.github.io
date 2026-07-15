@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nadra-fees-2026.netlify.app/sitemap.xml
+Sitemap: https://dashingkhurram0334-prog.github.io/nadra-site/sitemap.xml
