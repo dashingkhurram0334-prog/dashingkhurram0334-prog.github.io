@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NADRA Card Fees 2026 — Smart CNIC, Renewal, B-Form &amp; FRC Charges</title>
+<meta name="description" content="Up-to-date NADRA CNIC, Smart CNIC renewal, B-Form and FRC fee structure for Pakistan — Normal, Urgent and Executive processing charges in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F2A43;
+    --navy-deep:#081826;
+    --paper:#F7F5EF;
+    --card:#FFFFFF;
+    --green:#01411C;
+    --green-soft:#E8F0EA;
+    --ink:#20262C;
+    --muted:#6B7280;
+    --line:#E3DFD3;
+    --gold:#B98A2E;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px;}
+
+  /* HEADER */
+  header{
+    background:linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;
+    padding:16px 0;
+    border-bottom:3px solid var(--gold);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    max-width:880px;
+    margin:0 auto;
+    padding:0 20px;
+    flex-wrap:wrap;
+  }
+  .badge{
+    width:34px;height:34px;
+    border-radius:50%;
+    background:var(--green);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:15px;
+    flex-shrink:0;
+  }
+  .site-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:18px;
+    letter-spacing:0.2px;
+  }
+  .site-title span{color:var(--gold);}
+  nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;}
+  nav a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:12.5px;}
+  nav a:hover{color:#fff;}
+
+  /* HERO */
+  .hero{
+    padding:52px 20px 20px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--green);
+    margin-bottom:14px;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(30px, 5vw, 46px);
+    line-height:1.1;
+    margin:0 0 14px;
+    color:var(--navy-deep);
+  }
+  .sub{
+    font-size:16px;
+    color:var(--muted);
+    max-width:560px;
+    margin:0 auto 6px;
+  }
+  .updated{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    color:var(--gold);
+    letter-spacing:0.5px;
+    margin-top:10px;
+  }
+
+  /* CALCULATOR — signature element */
+  .calc{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    margin:34px 0;
+    box-shadow:0 1px 3px rgba(15,42,67,0.06);
+    overflow:hidden;
+  }
+  .calc-head{
+    background:var(--green-soft);
+    padding:16px 22px;
+    border-bottom:1px solid var(--line);
+  }
+  .calc-head h2{
+    font-family:'Fraunces', serif;
+    font-size:19px;
+    font-weight:600;
+    margin:0;
+    color:var(--green);
+  }
+  .calc-body{padding:22px;}
+  .field-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-bottom:18px;
+  }
+  .field label{
+    display:block;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--muted);
+    margin-bottom:6px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+  }
+  select{
+    width:100%;
+    padding:11px 12px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    background:#fff;
+    font-family:'Inter', sans-serif;
+    font-size:14.5px;
+    color:var(--ink);
+    cursor:pointer;
+  }
+  .receipt{
+    background:var(--navy-deep);
+    color:#fff;
+    border-radius:8px;
+    padding:20px 22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .receipt-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.6);
+    margin-bottom:4px;
+  }
+  .receipt-amount{
+    font-family:'Fraunces', serif;
+    font-size:36px;
+    font-weight:600;
+    color:#fff;
+  }
+  .receipt-time{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--gold);
+  }
+
+  /* SECTIONS */
+  .section-title{
+    font-family:'Fraunces', serif;
+    font-size:24px;
+    font-weight:600;
+    color:var(--navy-deep);
+    margin:44px 0 6px;
+  }
+  .section-sub{
+    color:var(--muted);
+    font-size:14.5px;
+    margin-bottom:18px;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  th,td{
+    text-align:left;
+    padding:12px 16px;
+    font-size:14px;
+    border-bottom:1px solid var(--line);
+  }
+  th{
+    background:var(--navy);
+    color:#fff;
+    font-weight:600;
+    font-size:12.5px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+  }
+  tr:last-child td{border-bottom:none;}
+  td.amount{
+    font-family:'JetBrains Mono', monospace;
+    font-weight:600;
+    color:var(--green);
+  }
+
+  /* FAQ */
+  .faq-item{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+  }
+  .faq-q{
+    padding:15px 18px;
+    font-weight:600;
+    font-size:14.5px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--navy-deep);
+  }
+  .faq-q::after{
+    content:"+";
+    font-size:20px;
+    color:var(--gold);
+    transition:transform .2s;
+  }
+  .faq-item.open .faq-q::after{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+    font-size:14px;
+    color:var(--muted);
+    padding:0 18px;
+  }
+  .faq-item.open .faq-a{
+    max-height:200px;
+    padding:0 18px 16px;
+  }
+
+  .locator{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    margin:34px 0;
+    box-shadow:0 1px 3px rgba(15,42,67,0.06);
+    overflow:hidden;
+  }
+  .locator-head{
+    background:var(--green-soft);
+    padding:16px 22px;
+    border-bottom:1px solid var(--line);
+  }
+  .locator-head h2{
+    font-family:'Fraunces', serif;
+    font-size:19px;
+    font-weight:600;
+    margin:0;
+    color:var(--green);
+  }
+  .locator-body{padding:22px;text-align:center;}
+  .locator-sub{
+    font-size:13.5px;
+    color:var(--muted);
+    margin:0 0 18px;
+  }
+  .locate-btn{
+    background:var(--navy);
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    padding:13px 26px;
+    font-family:'Inter', sans-serif;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    width:100%;
+    max-width:320px;
+  }
+  .locate-btn:hover{background:var(--navy-deep);}
+  .or-divider{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:16px 0;
+  }
+  .city-row{
+    display:flex;
+    gap:8px;
+    max-width:400px;
+    margin:0 auto;
+  }
+  .city-row input{
+    flex:1;
+    padding:11px 12px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    font-family:'Inter', sans-serif;
+    font-size:14.5px;
+  }
+  .city-btn{
+    background:var(--green);
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    padding:11px 18px;
+    font-family:'Inter', sans-serif;
+    font-size:14.5px;
+    font-weight:600;
+    cursor:pointer;
+  }
+  .city-btn:hover{background:#012f14;}
+  .locate-status{
+    margin-top:14px;
+    font-size:13px;
+    color:var(--muted);
+    font-family:'JetBrains Mono', monospace;
+  }
+
+  .disclaimer{
+    background:var(--green-soft);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:16px 18px;
+    font-size:13px;
+    color:var(--navy-deep);
+    margin:40px 0;
+  }
+  .disclaimer strong{color:var(--green);}
+
+  .ad-slot{
+    background:repeating-linear-gradient(45deg, #EDE9DC, #EDE9DC 10px, #E6E1D2 10px, #E6E1D2 20px);
+    border:1px dashed var(--line);
+    border-radius:8px;
+    padding:24px;
+    text-align:center;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:1px;
+    color:var(--muted);
+    text-transform:uppercase;
+    margin:36px 0;
+  }
+
+  footer{
+    text-align:center;
+    padding:36px 20px 50px;
+    font-size:12px;
+    color:var(--muted);
+    border-top:1px solid var(--line);
+    margin-top:40px;
+  }
+
+  @media (max-width:520px){
+    .field-row{grid-template-columns:1fr;}
+    .receipt{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="badge">N</div>
+    <div class="site-title">NADRA Fee<span>Guide</span></div>
+    <nav>
+      <a href="nicop-fees.html">NICOP</a>
+      <a href="documents-required.html">Documents</a>
+      <a href="track-cnic.html">Track CNIC</a>
+      <a href="about.html">About</a>
+          <a href="age-calculator.html">Age Calculator</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Pakistan · Identity Documents</div>
+    <h1>NADRA Card Fees, Made Simple</h1>
+    <p class="sub">Every current charge for Smart CNIC, renewal, B-Form and FRC — normal, urgent and executive — in one place.</p>
+    <div class="updated">LAST CHECKED · 2026</div>
+  </section>
+
+  <section class="calc">
+    <div class="calc-head"><h2>Fee Calculator</h2></div>
+    <div class="calc-body">
+      <div class="field-row">
+        <div class="field">
+          <label for="doc">Document</label>
+          <select id="doc">
+            <option value="new">New Smart CNIC</option>
+            <option value="renew">Smart CNIC Renewal</option>
+            <option value="modify">Modification</option>
+            <option value="duplicate">Duplicate (Lost/Damaged)</option>
+            <option value="bform">B-Form (Child Registration)</option>
+            <option value="frc">Family Registration Certificate</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="speed">Processing Speed</label>
+          <select id="speed">
+            <option value="normal">Normal</option>
+            <option value="urgent">Urgent</option>
+            <option value="executive">Executive</option>
+          </select>
+        </div>
+      </div>
+      <div class="receipt">
+        <div>
+          <div class="receipt-label">Fee Payable</div>
+          <div class="receipt-amount" id="amount">PKR 750</div>
+        </div>
+        <div class="receipt-time" id="time">≈ 30 working days</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot">Advertisement</div>
+
+  <div class="ad-slot">Advertisement</div>
+
+  <section class="locator">
+    <div class="locator-head"><h2>Find Your Nearest NADRA Center</h2></div>
+    <div class="locator-body">
+      <p class="locator-sub">Allow location access to find the closest NADRA Registration Center to you, or search by city.</p>
+      <button id="locateBtn" class="locate-btn">📍 Use My Location</button>
+      <div class="or-divider">or</div>
+      <div class="city-row">
+        <input type="text" id="cityInput" placeholder="Enter your city, e.g. Lahore">
+        <button id="citySearchBtn" class="city-btn">Search</button>
+      </div>
+      <div id="locateStatus" class="locate-status"></div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Smart CNIC — New &amp; Renewal</h2>
+  <p class="section-sub">Same fee structure applies whether you're applying for the first time or renewing an expired card.</p>
+  <table>
+    <tr><th>Processing</th><th>Fee (PKR)</th><th>Timeline</th></tr>
+    <tr><td>Normal</td><td class="amount">750</td><td>≈ 30 working days</td></tr>
+    <tr><td>Urgent</td><td class="amount">1,500</td><td>≈ 12 working days</td></tr>
+    <tr><td>Executive</td><td class="amount">2,500</td><td>≈ 7 working days</td></tr>
+  </table>
+
+  <h2 class="section-title">Duplicate CNIC</h2>
+  <p class="section-sub">For a lost, stolen or damaged card.</p>
+  <table>
+    <tr><th>Processing</th><th>Fee (PKR)</th></tr>
+    <tr><td>Normal</td><td class="amount">1,200</td></tr>
+    <tr><td>Urgent</td><td class="amount">2,250</td></tr>
+  </table>
+
+  <h2 class="section-title">B-Form &amp; Family Registration Certificate</h2>
+  <p class="section-sub">Required for children under 18 and for visa or inheritance purposes respectively.</p>
+  <table>
+    <tr><th>Document</th><th>Processing</th><th>Fee (PKR)</th></tr>
+    <tr><td>B-Form (CRC)</td><td>Normal (7 days)</td><td class="amount">50</td></tr>
+    <tr><td>B-Form (CRC)</td><td>Executive (1 day)</td><td class="amount">500</td></tr>
+    <tr><td>Family Registration Certificate</td><td>Standard (Birth or Marriage)</td><td class="amount">1,000</td></tr>
+    <tr><td>Family Registration Certificate</td><td>Combined (Alpha + Beta)</td><td class="amount">2,000</td></tr>
+  </table>
+
+  <div class="ad-slot">Advertisement</div>
+
+  <h2 class="section-title">Frequently Asked</h2>
+  <div id="faqList"></div>
+
+  <div class="disclaimer">
+    <strong>Note:</strong> NADRA revises its fee structure from time to time. These figures were verified against multiple current sources but always confirm the exact amount on the official Pak-Identity portal (id.nadra.gov.pk) or at your nearest NADRA Registration Center before paying.
+  </div>
+</main>
+
+<footer>
+  NADRA Fee Guide is an independent information resource and is not affiliated with or endorsed by NADRA.<br>
+  <a href="privacy-policy.html" style="color:inherit;">Privacy Policy</a> · <a href="about.html" style="color:inherit;">About</a> · <a href="nicop-fees.html" style="color:inherit;">NICOP Fees</a> · <a href="documents-required.html" style="color:inherit;">Documents Required</a> · <a href="track-cnic.html" style="color:inherit;">Track CNIC</a> · <a href="succession-certificate.html" style="color:inherit;">Succession Certificate</a> · <a href="age-calculator.html" style="color:inherit;">Age Calculator</a>
+</footer>
+
+<script>
+const FEES = {
+  new:      { normal:[750,"≈ 30 working days"], urgent:[1500,"≈ 12 working days"], executive:[2500,"≈ 7 working days"] },
+  renew:    { normal:[750,"≈ 30 working days"], urgent:[1500,"≈ 12 working days"], executive:[2500,"≈ 7 working days"] },
+  modify:   { normal:[750,"≈ 30 working days"], urgent:[1500,"≈ 12 working days"], executive:[2500,"≈ 7 working days"] },
+  duplicate:{ normal:[1200,"≈ 30 working days"], urgent:[2250,"≈ 12 working days"], executive:[2250,"≈ 12 working days"] },
+  bform:    { normal:[50,"≈ 7 working days"], urgent:[500,"1 working day"], executive:[500,"1 working day"] },
+  frc:      { normal:[1000,"Same-day at NRC / within 24 hrs online"], urgent:[1000,"Same-day at NRC / within 24 hrs online"], executive:[1000,"Same-day at NRC / within 24 hrs online"] },
+};
+
+const docEl = document.getElementById('doc');
+const speedEl = document.getElementById('speed');
+const amountEl = document.getElementById('amount');
+const timeEl = document.getElementById('time');
+
+function updateCalc(){
+  const entry = FEES[docEl.value][speedEl.value];
+  amountEl.textContent = `PKR ${entry[0].toLocaleString()}`;
+  timeEl.textContent = entry[1];
+}
+docEl.addEventListener('change', updateCalc);
+speedEl.addEventListener('change', updateCalc);
+updateCalc();
+
+const FAQS = [
+  { q: "Is Normal processing free for a first-time CNIC?", a: "For the very first CNIC application (not Smart CNIC), Normal processing is free. Smart CNIC — which almost everyone applies for now — starts at PKR 750 for Normal." },
+  { q: "Can I pay NADRA fees online?", a: "Yes. The Pak-Identity portal and app accept debit/credit cards and services like JazzCash and Easypaisa. At physical centers, cash is generally accepted." },
+  { q: "Are NADRA fees refundable?", a: "Generally no. Once your application enters processing, the fee is non-refundable — even if you picked the wrong category. Double-check details before submitting." },
+  { q: "Do NICOP fees follow the same structure?", a: "No. NICOP (for overseas Pakistanis) has a separate fee structure, usually charged in USD and split by zone." },
+];
+
+const faqList = document.getElementById('faqList');
+FAQS.forEach(item => {
+  const div = document.createElement('div');
+  div.className = 'faq-item';
+  div.innerHTML = `<div class="faq-q">${item.q}</div><div class="faq-a">${item.a}</div>`;
+  div.querySelector('.faq-q').onclick = () => div.classList.toggle('open');
+  faqList.appendChild(div);
+});
+
+// Nearest NADRA Center locator
+const locateBtn = document.getElementById('locateBtn');
+const locateStatus = document.getElementById('locateStatus');
+const cityInput = document.getElementById('cityInput');
+const citySearchBtn = document.getElementById('citySearchBtn');
+
+locateBtn.addEventListener('click', () => {
+  if (!navigator.geolocation) {
+    locateStatus.textContent = "Location isn't supported on this browser — try the city search instead.";
+    return;
+  }
+  locateStatus.textContent = "Getting your location…";
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      const { latitude, longitude } = pos.coords;
+      const url = `https://www.google.com/maps/search/NADRA+Registration+Center/@${latitude},${longitude},14z`;
+      locateStatus.textContent = "Opening Google Maps…";
+      window.open(url, '_blank');
+    },
+    (err) => {
+      locateStatus.textContent = "Couldn't access your location. Try the city search below instead.";
+    }
+  );
+});
+
+citySearchBtn.addEventListener('click', () => {
+  const city = cityInput.value.trim();
+  if (!city) {
+    locateStatus.textContent = "Type a city name first.";
+    return;
+  }
+  const query = encodeURIComponent(`NADRA Registration Center ${city}`);
+  window.open(`https://www.google.com/maps/search/?api=1&query=${query}`, '_blank');
+});
+
+cityInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') citySearchBtn.click();
+});
+</script>
+
+</body>
+</html>
