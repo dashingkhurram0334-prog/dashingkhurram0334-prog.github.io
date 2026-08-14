@@ -1,0 +1,1 @@
+Replace these files in your existing GitHub Pages repository. Do not delete other working article files. Replace contact.html and cnic-application-guide.html; add nadra-card-fees-2026.html and disclaimer.html. The homepage Read the Full Guide should point to nadra-card-fees-2026.html.
