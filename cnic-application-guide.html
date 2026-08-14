@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CNIC Application Guide 2026 — FeeGuide</title>
-<meta name="description" content="CNIC Application Guide 2026. Plain-language guidance for Pakistan identity documents and related services."/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CNIC Application Guide — NADRA FeeGuide</title>
+<meta name="description" content="CNIC Application Guide — complete FeeGuide article and application guide.">
 <style>
+
   :root{
     --ink:#14261f;
     --paper:#f6f3ec;
@@ -340,53 +341,46 @@
     .hero h1{font-size:36px;}
   }
 
-/* Final image/card fixes */
-.thumb{background:#fff !important;overflow:hidden !important;}
-.thumb img{width:100% !important;height:220px !important;max-height:none !important;object-fit:cover !important;display:block !important;margin:0 !important;background:#fff !important;}
-@media (max-width:760px){.thumb img{height:190px !important;object-fit:cover !important;}}
-.featured-img{background:#fff !important;overflow:hidden !important;}
 
-/* Requested top hero image */
-.id-banner-photo{width:100% !important;max-width:none !important;height:auto !important;margin:0 !important;display:block !important;}
-.id-banner{padding:0 !important;}
+.article-page{max-width:940px;margin:0 auto;padding:28px 18px 50px;}
+.article-shell{background:#fff;border:1px solid #d8d2c5;border-radius:8px;
+box-shadow:0 2px 12px rgba(12,51,39,.08);overflow:hidden;}
+.article-title{padding:26px 24px 18px;background:#0c3327;color:#fff;}
+.article-title .cat-tag{display:inline-block;color:#e4c891;font-size:11px;font-weight:700;
+letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;}
+.article-title h1{margin:0;font-size:30px;line-height:1.25;color:#fff;}
+.full-article{padding:24px;}
+.full-article p,.full-article li{line-height:1.75;}
+.full-article h2,.full-article h3{color:#0c3327;}
+.full-article img{max-width:100%;height:auto;border-radius:6px;}
+.full-article table{width:100%;border-collapse:collapse;margin:16px 0;}
+.full-article th,.full-article td{border:1px solid #d8d2c5;padding:9px;text-align:left;}
+.full-article th{background:#0c3327;color:#fff;}
+.back-home{display:inline-block;margin:20px 24px 0;color:#1f6b4a;font-weight:700;text-decoration:none;}
+@media(max-width:640px){
+.article-page{padding:18px 12px 35px}.article-title h1{font-size:24px}.full-article{padding:17px}
+.full-article table{font-size:13px}
+}
 
-
-/* Consistent article-page layout */
-.article-page{max-width:920px;margin:0 auto;padding:28px 18px 40px;}
-.article-hero{background:var(--green-deep);color:#f4efe2;border:1px solid rgba(184,134,59,.35);
-  border-radius:10px;padding:26px 22px;margin-bottom:18px;box-shadow:0 6px 20px rgba(15,61,46,.14);}
-.article-hero .eyebrow{color:#e4c891;}
-.article-hero h1{color:#fff;margin:8px 0 8px;font-size:28px;line-height:1.2;}
-.article-hero p{color:#d8d1bd;margin:0;font-size:14px;}
-.article-card-full{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px 20px;
-  box-shadow:0 1px 3px rgba(15,61,46,.06),0 4px 14px rgba(15,61,46,.04);margin-bottom:16px;}
-.article-card-full h2{font-size:19px;color:var(--green-deep);margin:0 0 10px;}
-.article-card-full h3{font-size:16px;color:var(--green-deep);margin:18px 0 7px;}
-.article-card-full p,.article-card-full li{font-size:14px;color:var(--muted);line-height:1.7;}
-.article-card-full ul{padding-left:20px;}
-.note{background:#f6f3ec;border-left:3px solid var(--gold);padding:12px 14px;margin:14px 0;border-radius:4px;}
-.fee-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
-.fee-table th,.fee-table td{border:1px solid var(--line);padding:10px;text-align:left;}
-.fee-table th{background:var(--green-deep);color:#fff;}
-.back{display:inline-block;margin-top:4px;font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:bold;color:var(--green-mid);}
-@media(max-width:640px){.article-page{padding:22px 14px 34px}.article-hero h1{font-size:24px}.article-card-full{padding:18px 15px}}
 </style>
 </head>
 <body>
-
 <header>
   <div class="brand-row">
     <svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-      <rect fill="#0c3327" height="38" rx="8" stroke="#b8863b" stroke-width="1.4" width="38" x="1" y="1"/>
-      <g fill="none" stroke="#e4c891" stroke-linecap="round" stroke-width="1.6" transform="translate(20,20)">
+      <rect x="1" y="1" width="38" height="38" rx="8" fill="#0c3327" stroke="#b8863b" stroke-width="1.4"/>
+      <g transform="translate(20,20)" stroke="#e4c891" stroke-width="1.6" fill="none" stroke-linecap="round">
         <path d="M-2,-11 C7,-11 13,-5 13,2 C13,9 7,14 0,14"/>
         <path d="M-4,-9 C-11,-7 -15,-1 -14,6 C-13,12 -8,16 -2,16"/>
         <path d="M2,-8 C8,-8 12,-4 11,2 C10,7 6,10 1,10"/>
         <path d="M0,-5 C4,-6 7,-3 6,1 C5,4 2,6 -1,5"/>
       </g>
-      <circle cx="20" cy="20" fill="#b8863b" r="1.6"/>
+      <circle cx="20" cy="20" r="1.6" fill="#b8863b"/>
     </svg>
-    <div class="brand-text"><strong>FeeGuide</strong><span>Pakistan · Identity Documents</span></div>
+    <div class="brand-text">
+      <strong>NADRA FeeGuide</strong>
+      <span>Pakistan · Identity Documents</span>
+    </div>
   </div>
   <nav>
     <a href="index.html">Home</a>
@@ -401,30 +395,69 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-
 <main class="article-page">
-  <section class="article-hero">
-    <div class="eyebrow">FeeGuide · Pakistan · 2026</div>
-    <h1>CNIC Application Guide 2026</h1>
-    <p>Clear, practical information in the same design as the FeeGuide homepage.</p>
-  </section>
-  <article class="article-card-full">
-    <h2>First-time CNIC application</h2>
-<p>This page gives a simple checklist for a first-time Smart CNIC application, from preparing documents to completing biometric verification.</p>
-<h3>Basic process</h3><ol><li>Prepare the required original documents.</li><li>Visit an applicable NADRA registration centre or use an officially supported online service.</li><li>Provide personal information and complete verification/biometrics.</li><li>Review the application details carefully before submission.</li><li>Keep the receipt or tracking information for later reference.</li></ol>
-<div class="note"><strong>Tip:</strong> Requirements may differ by age, citizenship status and the type of application.</div>
-    <a class="back" href="index.html">← Back to FeeGuide Home</a>
+  <article class="article-shell">
+    <div class="article-title">
+      <div class="cat-tag">Application</div>
+      <h1>CNIC Application Guide</h1>
+    </div>
+    <div class="full-article">
+      <div class="article-card">
+    <div class="thumb">
+      <svg class="wide-icon" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="cnicCard" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2a7a58"/>
+            <stop offset="100%" stop-color="#0c3327"/>
+          </linearGradient>
+          <linearGradient id="cnicGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e9d9a8"/>
+            <stop offset="100%" stop-color="#b8863b"/>
+          </linearGradient>
+        </defs>
+        <!-- main smart card -->
+        <rect x="12" y="24" width="62" height="42" rx="5" fill="url(#cnicCard)" stroke="#e4c891" stroke-width="1.6"/>
+        <rect x="19" y="31" width="10" height="8" rx="1.4" fill="url(#cnicGold)"/>
+        <circle cx="38" cy="35" r="6" fill="none" stroke="#e4c891" stroke-width="1.3"/>
+        <path d="M32 46c0-4 3-6 6-6s6 2 6 6" fill="none" stroke="#e4c891" stroke-width="1.3"/>
+        <rect x="48" y="31" width="20" height="2.4" fill="#8fa595"/>
+        <rect x="48" y="37" width="20" height="2.4" fill="#8fa595"/>
+        <rect x="19" y="54" width="48" height="2.6" rx="1.3" fill="#e4c891" opacity=".7"/>
+        <!-- pen writing / applying -->
+        <g transform="translate(70,10) rotate(40)">
+          <rect x="0" y="0" width="34" height="5" rx="2.5" fill="url(#cnicGold)"/>
+          <path d="M34 0l6 2.5L34 5z" fill="#e9d9a8"/>
+        </g>
+        <!-- checklist steps -->
+        <g stroke="#e4c891" stroke-width="1.6" fill="none">
+          <circle cx="90" cy="46" r="7"/>
+          <path d="M86.5 46l2.3 2.6L94 42.5"/>
+        </g>
+        <text x="100" y="50" fill="#e4c891" font-size="9" font-family="Trebuchet MS, sans-serif" font-weight="bold">1</text>
+        <circle cx="90" cy="66" r="7" fill="none" stroke="#8fa595" stroke-width="1.6"/>
+        <text x="87" y="69" fill="#8fa595" font-size="8" font-family="Trebuchet MS, sans-serif" font-weight="bold">2</text>
+        <line x1="90" y1="53" x2="90" y2="59" stroke="#8fa595" stroke-width="1.4" stroke-dasharray="2 2"/>
+      </svg>
+    </div>
+    <div class="article-body">
+      <div class="cat-tag">Application</div>
+      <h3>CNIC Application Guide</h3>
+      <p>Step-by-step process for a first-time Smart CNIC application, from documents to biometric verification.</p>
+      <a class="read-more" href="cnic-application-guide.html">Read More</a>
+    </div>
+  </div>
+    </div>
+    <a class="back-home" href="index.html">← Back to Home</a>
   </article>
 </main>
-
 <footer>
-  <div class="disclaim">FeeGuide is an independent informational website. Always confirm current fees, requirements and processing rules with the relevant official authority before applying.</div>
+  <div class="disclaim">NADRA FeeGuide is an independent information resource and is not affiliated with or endorsed by NADRA. Fees are verified against multiple current sources but may change — always confirm on the official Pak-Identity portal (id.nadra.gov.pk) before paying.</div>
   <div class="flinks">
-    <a href="about.html">About</a><a href="contact.html">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </div>
-  <div class="copyright">© 2026 FeeGuide · Pakistan Identity Documents</div>
+  <div class="copyright">© 2026 NADRA FeeGuide. All rights reserved.</div>
 </footer>
-
 </body>
 </html>
