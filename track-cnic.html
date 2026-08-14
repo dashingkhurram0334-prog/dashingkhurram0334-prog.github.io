@@ -1,146 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Track Your CNIC Application 2026 — SMS, Online Portal & App Methods</title>
-<meta name="description" content="Complete guide to tracking your CNIC application status using SMS, online portal, or mobile app. Real-time updates on your NADRA Smart CNIC processing.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Track CNIC Application — 2026 Guide — FeeGuide</title>
+<meta name="description" content="Track CNIC Application — 2026 Guide. Plain-language guidance for Pakistan identity documents and related services."/>
 <style>
-  :root{--navy:#0F2A43; --navy-deep:#081826; --paper:#F7F5EF; --card:#FFFFFF; --green:#01411C; --green-soft:#E8F0EA; --ink:#20262C; --muted:#6B7280; --line:#E3DFD3; --gold:#B98A2E;}
-  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
-  body{background:var(--paper);color:var(--ink);font-family:'Inter', sans-serif;line-height:1.6;}
-  .wrap{max-width:820px;margin:0 auto;padding:0 20px;}
-  header{background:linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);color:#fff;padding:16px 0;border-bottom:3px solid var(--gold);}
-  .header-inner{display:flex;align-items:center;gap:10px;max-width:820px;margin:0 auto;padding:0 20px;flex-wrap:wrap;}
-  .badge{width:34px;height:34px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:'Fraunces', serif;font-weight:700;font-size:15px;flex-shrink:0;}
-  .site-title{font-family:'Fraunces', serif;font-weight:600;font-size:18px;}
-  .site-title span{color:var(--gold);}
-  nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;}
-  nav a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:12.5px;}
-  nav a:hover{color:#fff;}
-  main{padding:44px 20px 60px;}
-  h1{font-family:'Fraunces', serif;font-weight:600;font-size:clamp(28px, 4vw, 38px);color:var(--navy-deep);margin:0 0 8px;}
-  .updated{font-family:'JetBrains Mono', monospace;font-size:11.5px;color:var(--gold);letter-spacing:0.5px;margin-bottom:22px;}
-  p{font-size:14.5px;color:var(--ink);margin-bottom:12px;}
-  h2{font-family:'Fraunces', serif;font-weight:600;font-size:20px;color:var(--green);margin:30px 0 10px;}
-  h3{font-family:'Fraunces', serif;font-weight:600;font-size:16px;color:var(--navy-deep);margin:16px 0 8px;}
-  .method{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin-bottom:14px;}
-  .method h3{margin:0 0 10px;}
-  .method p{margin:0 0 10px;}
-  .code-box{background:var(--navy-deep);color:#fff;padding:12px 14px;border-radius:6px;font-family:'JetBrains Mono', monospace;font-size:13px;margin:8px 0;}
-  .status-table{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;margin:16px 0;font-size:14px;}
-  .status-row{padding:8px 0;border-bottom:1px solid var(--line);}
-  .status-row:last-child{border-bottom:none;}
-  .status-label{font-weight:600;color:var(--navy-deep);}
-  .status-desc{color:var(--muted);margin-top:3px;}
-  .faq{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin-bottom:12px;}
-  .faq-q{font-weight:600;color:var(--navy-deep);margin:0 0 8px;}
-  .faq-a{margin:0;font-size:14px;color:var(--muted);}
-  .info-box{background:var(--green-soft);border:1px solid var(--line);border-radius:8px;padding:16px 18px;font-size:13.5px;color:var(--navy-deep);margin:34px 0;}
-  .info-box strong{color:var(--green);}
-  footer{text-align:center;padding:36px 20px 50px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:20px;}
+  :root{
+    --ink:#14261f;
+    --paper:#f6f3ec;
+    --card:#ffffff;
+    --green-deep:#0f3d2e;
+    --green-mid:#1f6b4a;
+    --gold:#b8863b;
+    --line:#dcd4c0;
+    --muted:#5c6b62;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Georgia', 'Noto Nastaliq Urdu', serif;
+    line-height:1.5;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  /* Header */
+  header{
+    background:var(--green-deep);
+    color:#f4efe2;
+    padding:14px 18px;
+    position:sticky;
+    top:0;
+    z-index:20;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+  }
+  .brand-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .brand-mark{
+    width:38px;height:38px;
+    flex-shrink:0;
+  }
+  .brand-text{
+    font-family:'Trebuchet MS', sans-serif;
+    letter-spacing:.5px;
+  }
+  .brand-text strong{
+    display:block;
+    font-size:15px;
+  }
+  .brand-text span{
+    font-size:10.5px;
+    color:#c9bd9e;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+  }
+  nav{
+    display:flex;
+    overflow-x:auto;
+    gap:18px;
+    margin-top:12px;
+    padding-bottom:2px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  nav::-webkit-scrollbar{display:none;}
+  nav a{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:12.5px;
+    white-space:nowrap;
+    color:#e4dcc4;
+    border-bottom:2px solid transparent;
+    padding-bottom:6px;
+  }
+  nav a:hover{border-bottom-color:var(--gold);}
+
+  /* Hero */
+  .hero{
+    padding:34px 18px 26px;
+    background:
+      radial-gradient(circle at 85% 0%, rgba(184,134,59,.10), transparent 55%),
+      var(--paper);
+    border-bottom:1px solid var(--line);
+  }
+
+  /* Green banner with illustration */
+  .id-banner{
+    background:var(--green-deep);
+    padding:26px 18px 30px;
+    position:relative;
+    overflow:hidden;
+  }
+  .id-banner-art{
+    display:block;
+    margin:0 auto;
+    width:100%;
+    max-width:300px;
+    height:auto;
+  }
+  .eyebrow{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--green-mid);
+    font-weight:bold;
+  }
+  .hero h1{
+    font-size:29px;
+    line-height:1.18;
+    margin:10px 0 12px;
+    color:var(--green-deep);
+  }
+  .hero p{
+    font-size:15px;
+    color:var(--muted);
+    max-width:46ch;
+    margin:0 0 6px;
+  }
+  .hero-flex{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .hero-photo{
+    width:100%;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(15,61,46,.15);
+    border:1px solid var(--line);
+  }
+  .hero-photo img{width:100%;display:block;}
+  @media(min-width:640px){
+    .hero-flex{flex-direction:row-reverse;align-items:center;}
+    .hero-photo{width:40%;}
+    .hero-text{width:60%;}
+  }
+  .updated-tag{
+    display:inline-block;
+    margin-top:14px;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+    color:var(--gold);
+    border:1px solid var(--gold);
+    padding:4px 10px;
+    border-radius:20px;
+  }
+
+  /* Section headers */
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    padding:26px 18px 4px;
+  }
+  .section-head h2{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--green-deep);
+    font-family:'Trebuchet MS', sans-serif;
+    margin:0;
+    border-bottom:2px solid var(--gold);
+    padding-bottom:6px;
+  }
+  .section-count{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:11px;
+    color:var(--muted);
+  }
+
+  /* Featured card */
+  .featured{
+    margin:14px 18px 8px;
+    background:var(--green-deep);
+    color:#f4efe2;
+    border-radius:8px;
+    padding:22px 20px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(15,61,46,.18);
+    border:1px solid rgba(184,134,59,.35);
+  }
+  .featured::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 100% 100%, rgba(184,134,59,.25), transparent 60%);
+  }
+  .featured-label{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:10.5px;
+    letter-spacing:1.5px;
+    color:var(--gold);
+    text-transform:uppercase;
+  }
+  .featured h3{
+    font-size:20px;
+    margin:8px 0 8px;
+    position:relative;
+  }
+  .featured p{
+    font-size:13.5px;
+    color:#cfc7ac;
+    margin:0 0 14px;
+    position:relative;
+  }
+  .featured a.btn{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--green-deep);
+    font-family:'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    font-size:12.5px;
+    padding:9px 16px;
+    border-radius:4px;
+    position:relative;
+  }
+  .featured-img{
+    width:100%;
+    border-radius:6px;
+    overflow:hidden;
+    margin-bottom:14px;
+    border:1px solid rgba(184,134,59,.4);
+    position:relative;
+  }
+  .featured-img img{width:100%;display:block;}
+
+  /* Article grid */
+  .grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    padding:14px 18px 6px;
+  }
+  .article-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:0 0 14px;
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(15,61,46,.06), 0 4px 14px rgba(15,61,46,.04);
+    transition:box-shadow .15s ease, transform .15s ease;
+  }
+  .article-card:active{
+    box-shadow:0 2px 6px rgba(15,61,46,.1);
+    transform:translateY(1px);
+  }
+  .thumb{
+    width:100%;
+    min-height:110px;
+    background:linear-gradient(135deg,#12463a,#0c3327);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:2px solid var(--gold);
+    overflow:hidden;
+  }
+  .thumb svg{width:52px;height:52px;}
+  .thumb svg.wide-icon{width:100%;height:100%;max-height:110px;}
+  .thumb img{width:100%;height:auto;max-height:220px;object-fit:contain;display:block;}
+  .article-body{padding:14px 16px 0;}
+  .cat-tag{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:bold;
+  }
+  .article-card h3{
+    font-size:16.5px;
+    margin:6px 0 6px;
+    color:var(--green-deep);
+    line-height:1.3;
+  }
+  .article-card p{
+    font-size:13px;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+  .read-more{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:var(--green-mid);
+  }
+  .read-more::after{content:" →";}
+
+  /* Category divider strip */
+  .strip{
+    margin:30px 18px 0;
+    padding:9px 14px;
+    background:var(--green-mid);
+    color:#eef4ef;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:11px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    border-radius:5px;
+    box-shadow:0 2px 8px rgba(31,107,74,.2);
+  }
+
+  footer{
+    margin-top:36px;
+    background:var(--green-deep);
+    color:#c9bd9e;
+    padding:26px 18px 22px;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:12px;
+  }
+  footer .disclaim{
+    color:#8fa595;
+    font-size:11px;
+    line-height:1.6;
+    margin-bottom:14px;
+  }
+  footer .flinks{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 16px;
+    margin-bottom:16px;
+  }
+  footer .flinks a{color:#e4dcc4;}
+  footer .copyright{
+    border-top:1px solid rgba(255,255,255,.1);
+    padding-top:14px;
+    font-size:11px;
+    color:#7d9184;
+  }
+
+  @media(min-width:640px){
+    .grid{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:36px;}
+  }
+
+/* Final image/card fixes */
+.thumb{background:#fff !important;overflow:hidden !important;}
+.thumb img{width:100% !important;height:220px !important;max-height:none !important;object-fit:cover !important;display:block !important;margin:0 !important;background:#fff !important;}
+@media (max-width:760px){.thumb img{height:190px !important;object-fit:cover !important;}}
+.featured-img{background:#fff !important;overflow:hidden !important;}
+
+/* Requested top hero image */
+.id-banner-photo{width:100% !important;max-width:none !important;height:auto !important;margin:0 !important;display:block !important;}
+.id-banner{padding:0 !important;}
+
+
+/* Consistent article-page layout */
+.article-page{max-width:920px;margin:0 auto;padding:28px 18px 40px;}
+.article-hero{background:var(--green-deep);color:#f4efe2;border:1px solid rgba(184,134,59,.35);
+  border-radius:10px;padding:26px 22px;margin-bottom:18px;box-shadow:0 6px 20px rgba(15,61,46,.14);}
+.article-hero .eyebrow{color:#e4c891;}
+.article-hero h1{color:#fff;margin:8px 0 8px;font-size:28px;line-height:1.2;}
+.article-hero p{color:#d8d1bd;margin:0;font-size:14px;}
+.article-card-full{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px 20px;
+  box-shadow:0 1px 3px rgba(15,61,46,.06),0 4px 14px rgba(15,61,46,.04);margin-bottom:16px;}
+.article-card-full h2{font-size:19px;color:var(--green-deep);margin:0 0 10px;}
+.article-card-full h3{font-size:16px;color:var(--green-deep);margin:18px 0 7px;}
+.article-card-full p,.article-card-full li{font-size:14px;color:var(--muted);line-height:1.7;}
+.article-card-full ul{padding-left:20px;}
+.note{background:#f6f3ec;border-left:3px solid var(--gold);padding:12px 14px;margin:14px 0;border-radius:4px;}
+.fee-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+.fee-table th,.fee-table td{border:1px solid var(--line);padding:10px;text-align:left;}
+.fee-table th{background:var(--green-deep);color:#fff;}
+.back{display:inline-block;margin-top:4px;font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:bold;color:var(--green-mid);}
+@media(max-width:640px){.article-page{padding:22px 14px 34px}.article-hero h1{font-size:24px}.article-card-full{padding:18px 15px}}
 </style>
 </head>
 <body>
+
 <header>
-  <div class="header-inner">
-    <div class="badge">N</div>
-    <div class="site-title">NADRA Fee<span>Guide</span></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="nicop-fees.html">NICOP</a>
-      <a href="documents-required.html">Documents</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <div class="brand-row">
+    <svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <rect fill="#0c3327" height="38" rx="8" stroke="#b8863b" stroke-width="1.4" width="38" x="1" y="1"/>
+      <g fill="none" stroke="#e4c891" stroke-linecap="round" stroke-width="1.6" transform="translate(20,20)">
+        <path d="M-2,-11 C7,-11 13,-5 13,2 C13,9 7,14 0,14"/>
+        <path d="M-4,-9 C-11,-7 -15,-1 -14,6 C-13,12 -8,16 -2,16"/>
+        <path d="M2,-8 C8,-8 12,-4 11,2 C10,7 6,10 1,10"/>
+        <path d="M0,-5 C4,-6 7,-3 6,1 C5,4 2,6 -1,5"/>
+      </g>
+      <circle cx="20" cy="20" fill="#b8863b" r="1.6"/>
+    </svg>
+    <div class="brand-text"><strong>FeeGuide</strong><span>Pakistan · Identity Documents</span></div>
   </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="nicop-fees.html">NICOP</a>
+    <a href="cnic-application-guide.html">CNIC Guide</a>
+    <a href="duplicate-cnic.html">Duplicate CNIC</a>
+    <a href="track-cnic.html">Track CNIC</a>
+    <a href="e-passport-fees.html">E-Passport</a>
+    <a href="succession-certificate.html">Succession</a>
+    <a href="documents-required.html">Documents</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
-<main class="wrap">
-  <h1>How to Track Your CNIC Application — 3 Methods</h1>
-  <div class="updated">TRACKING GUIDE · JULY 2026</div>
-  <p>Once you've submitted your Smart CNIC application at a NADRA center, you don't have to wait passively wondering when it will be ready. NADRA provides three convenient ways to track your application in real-time — via SMS, an online portal, or a mobile app — so you always know exactly where your card is in the processing pipeline.</p>
 
-  <h2>Method 1 — SMS Tracking (Instant, No Internet Needed)</h2>
-  <div class="method">
-    <h3>Send SMS to 8400</h3>  
-    <p>The simples tracking method. When you submit your CNIC application, you'll receive a reference slip with a 13-digit tracking ID. Keep this safe.</p>
-    <div class="code-box">SMS: [Your 13-digit ID] → 8400</div>
-    <p><strong>Example:</strong> If your tracking ID is 1234567890123, text "1234567890123" to 8400. Within seconds, NADRA will reply with your current status.</p>
-    <p><strong>Pros:</strong> Works without internet, instant response, free (standard SMS rates apply), available 24/7. <strong>Cons:</strong> Limited detail — only shows current status, not historical updates.</p>
-  </div>
-
-  <h2>Method 2 — Online Portal (Real-Time, Detailed)</h2>
-  <div class="method">
-    <h3>Visit id.nadra.gov.pk</h3>
-    <p>Go to the official NADRA portal, select "Track Your Card," enter your 13-digit tracking ID, and you'll see detailed information about your application.</p>
-    <p><strong>What you'll see:</strong> Current processing stage, estimated completion date, and historical status updates for each step.</p>
-    <p><strong>Pros:</strong> Most detailed information, 24/7 access, free, accessible from any device with internet. <strong>Cons:</strong> Requires internet, sometimes shows information with slight delay (usually updates within 24 hours).</p>
-  </div>
-
-  <h2>Method 3 — Mobile App (Comprehensive, User-Friendly)</h2>
-  <div class="method">
-    <h3>Download Pak-ID App</h3>
-    <p>Download the free "Pak-ID" app from Google Play Store (Android) or Apple App Store (iOS). Create an account using your email and phone number, then log in.</p>
-    <p><strong>Inside the app:</strong> View all your identity documents (CNIC, passport status, B-Form), track multiple applications at once, receive push notifications when status changes, and manage renewal reminders.</p>
-    <p><strong>Pros:</strong> User-friendly interface, real-time notifications, track multiple documents, no tracking ID memorization needed. <strong>Cons:</strong> Requires smartphone and app installation, uses mobile data.</p>
-  </div>
-
-  <h2>Understanding Your CNIC Status</h2>
-  <p>As your application moves through NADRA's system, you'll see status updates. Here's what each stage means:</p>
-
-  <div class="status-table">
-    <div class="status-row">
-      <div class="status-label">Data Entry</div>
-      <div class="status-desc">Your application is being entered into the system. This stage typically takes 1-3 days.</div>
-    </div>
-    <div class="status-row">
-      <div class="status-label">Processing</div>
-      <div class="status-desc">NADRA is verifying your documents and checking records. This is the longest stage, lasting 10-20 days depending on processing type.</div>
-    </div>
-    <div class="status-row">
-      <div class="status-label">Printing</div>
-      <div class="status-desc">Your card has been approved and is being physically printed. Takes 2-5 days.</div>
-    </div>
-    <div class="status-row">
-      <div class="status-label">Ready for Delivery</div>
-      <div class="status-desc">Your card is complete and waiting for you to collect. You can now visit the center and pick it up using your receipt.</div>
-    </div>
-  </div>
-
-  <h2>Troubleshooting Tracking Issues</h2>
-
-  <div class="faq">
-    <div class="faq-q">Q: My tracking ID doesn't work. What do I do?</div>
-    <div class="faq-a">A: Ensure you're entering exactly 13 digits without spaces or dashes. Double-check your reference slip for typos. If the ID is still invalid, visit a NADRA center with your receipt and staff can look up your application manually using your name and date of application.</div>
-  </div>
-
-  <div class="faq">
-    <div class="faq-q">Q: The portal says "Data Entry" but 3 days have passed. Why is it slow?</div>
-    <div class="faq-a">A: Data entry typically completes within 1-3 days, but delays occasionally happen due to high volume. If it's been more than 5 days, visit the center to confirm your application was properly submitted. The submission slip should have been stamped and dated.</div>
-  </div>
-
-  <div class="faq">
-    <div class="faq-q">Q: My status hasn't changed in a week. Is something wrong?</div>
-    <div class="faq-a">A: Status updates can lag by 24-48 hours due to system synchronization. Wait another day and check again. If it still hasn't progressed after 10 days (or the quoted timeline for your processing type), visit the center to inquire. Sometimes documents need additional verification, which causes delays.</div>
-  </div>
-
-  <div class="faq">
-    <div class="faq-q">Q: What if my application shows an error or "Rejected" status?</div>
-    <div class="faq-a">A: Visit the center immediately with your receipt. A NADRA officer will explain the rejection reason. Usually, rejections are fixable — you'll reapply with corrected documents. See our "CNIC Rejected? Why & Solutions" guide for detailed troubleshooting.</div>
-  </div>
-
-  <div class="faq">
-    <div class="faq-q">Q: How often should I check my status?</div>
-    <div class="faq-a">A: Checking every 2-3 days is reasonable. Checking multiple times daily is unnecessary since updates typically happen overnight. If you have the Pak-ID app installed, you'll receive automatic notifications when status changes, so you don't need to manually check.</div>
-  </div>
-
-  <div class="info-box">
-    <strong>Pro tip:</strong> Save your 13-digit tracking ID in a safe place or take a photo of it. You'll need it multiple times — to track progress, at collection time, and potentially for customer service inquiries. Keep your original reference slip safe as well.
-  </div>
+<main class="article-page">
+  <section class="article-hero">
+    <div class="eyebrow">FeeGuide · Pakistan · 2026</div>
+    <h1>Track CNIC Application — 2026 Guide</h1>
+    <p>Clear, practical information in the same design as the FeeGuide homepage.</p>
+  </section>
+  <article class="article-card-full">
+    <h2>How to track your application</h2>
+<p>Use the tracking/reference details provided with your NADRA application. Enter the information only on an official NADRA service when an online tracking option is provided.</p>
+<h3>Keep your receipt</h3><p>Your receipt or application reference is the most useful information for checking progress. If the status does not update, follow the official customer-support route.</p>
+<div class="note"><strong>Security:</strong> Never share your CNIC number, OTP, password or personal documents with an unknown person claiming to offer tracking help.</div>
+    <a class="back" href="index.html">← Back to FeeGuide Home</a>
+  </article>
 </main>
+
 <footer>
-  NADRA Fee Guide is an independent information resource and is not affiliated with or endorsed by NADRA. · <a href="privacy-policy.html" style="color:inherit;">Privacy Policy</a> · <a href="contact.html" style="color:inherit;">Contact Us</a>
+  <div class="disclaim">FeeGuide is an independent informational website. Always confirm current fees, requirements and processing rules with the relevant official authority before applying.</div>
+  <div class="flinks">
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <div class="copyright">© 2026 FeeGuide · Pakistan Identity Documents</div>
 </footer>
+
 </body>
 </html>
