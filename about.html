@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>About FeeGuide — FeeGuide</title>
-<meta name="description" content="About FeeGuide. Plain-language guidance for Pakistan identity documents and related services."/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About FeeGuide — Independent NADRA & Passport Fee Information | FeeGuide</title>
+<meta name="description" content="Learn about FeeGuide, an independent resource providing verified, up-to-date NADRA and passport fee information for Pakistani citizens.">
 <style>
   :root{
     --ink:#14261f;
@@ -350,81 +350,218 @@
 .id-banner-photo{width:100% !important;max-width:none !important;height:auto !important;margin:0 !important;display:block !important;}
 .id-banner{padding:0 !important;}
 
+  /* Article page additions */
+  .article-hero{
+    padding:28px 18px 22px;
+    background:var(--green-deep);
+    color:#f4efe2;
+  }
+  .article-hero .eyebrow{color:var(--gold);}
+  .article-hero h1{
+    font-size:24px;
+    line-height:1.25;
+    margin:8px 0 10px;
+    color:#f4efe2;
+  }
+  .article-hero p{
+    font-size:13.5px;
+    color:#cfc7ac;
+    margin:0;
+  }
+  .article-meta{
+    display:flex;
+    gap:14px;
+    margin-top:14px;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:11px;
+    color:#b8863b;
+  }
+  .content{
+    padding:22px 18px;
+    max-width:720px;
+    margin:0 auto;
+  }
+  .content h2{
+    font-size:19px;
+    color:var(--green-deep);
+    margin:26px 0 10px;
+    border-left:4px solid var(--gold);
+    padding-left:10px;
+  }
+  .content h2:first-child{margin-top:0;}
+  .content h3{
+    font-size:15.5px;
+    color:var(--green-mid);
+    margin:18px 0 6px;
+  }
+  .content p{
+    font-size:14.5px;
+    line-height:1.65;
+    color:var(--ink);
+    margin:0 0 12px;
+  }
+  .content ul, .content ol{
+    margin:0 0 14px;
+    padding-left:20px;
+  }
+  .content li{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:6px;
+    color:var(--ink);
+  }
+  table.fee-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0 18px;
+    font-size:13px;
+    box-shadow:0 1px 4px rgba(15,61,46,.08);
+  }
+  table.fee-table th{
+    background:var(--green-deep);
+    color:#f4efe2;
+    padding:9px 8px;
+    text-align:left;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size:11.5px;
+  }
+  table.fee-table td{
+    padding:8px;
+    border-bottom:1px solid var(--line);
+    background:#fff;
+  }
+  table.fee-table tr:nth-child(even) td{background:#faf8f2;}
+  .callout{
+    background:#faf6ea;
+    border-left:4px solid var(--gold);
+    padding:12px 14px;
+    margin:14px 0;
+    font-size:13.5px;
+    border-radius:4px;
+    color:var(--ink);
+  }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:12px 0;
+  }
+  .faq-item h3{margin-top:0;}
+  .faq-item p{margin-bottom:0;color:var(--muted);font-size:13.5px;}
+  .related{
+    background:var(--paper);
+    padding:20px 18px 4px;
+    border-top:1px solid var(--line);
+  }
+  .related h2{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--green-deep);
+    font-family:'Trebuchet MS', sans-serif;
+    margin:0 0 14px;
+    border-bottom:2px solid var(--gold);
+    padding-bottom:6px;
+    display:inline-block;
+  }
+  .related-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding-bottom:20px;
+  }
+  .related-links a{
+    font-size:13.5px;
+    color:var(--green-mid);
+    font-weight:bold;
+  }
+  .related-links a::after{content:" →";}
 
-/* Consistent article-page layout */
-.article-page{max-width:920px;margin:0 auto;padding:28px 18px 40px;}
-.article-hero{background:var(--green-deep);color:#f4efe2;border:1px solid rgba(184,134,59,.35);
-  border-radius:10px;padding:26px 22px;margin-bottom:18px;box-shadow:0 6px 20px rgba(15,61,46,.14);}
-.article-hero .eyebrow{color:#e4c891;}
-.article-hero h1{color:#fff;margin:8px 0 8px;font-size:28px;line-height:1.2;}
-.article-hero p{color:#d8d1bd;margin:0;font-size:14px;}
-.article-card-full{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px 20px;
-  box-shadow:0 1px 3px rgba(15,61,46,.06),0 4px 14px rgba(15,61,46,.04);margin-bottom:16px;}
-.article-card-full h2{font-size:19px;color:var(--green-deep);margin:0 0 10px;}
-.article-card-full h3{font-size:16px;color:var(--green-deep);margin:18px 0 7px;}
-.article-card-full p,.article-card-full li{font-size:14px;color:var(--muted);line-height:1.7;}
-.article-card-full ul{padding-left:20px;}
-.note{background:#f6f3ec;border-left:3px solid var(--gold);padding:12px 14px;margin:14px 0;border-radius:4px;}
-.fee-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
-.fee-table th,.fee-table td{border:1px solid var(--line);padding:10px;text-align:left;}
-.fee-table th{background:var(--green-deep);color:#fff;}
-.back{display:inline-block;margin-top:4px;font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:bold;color:var(--green-mid);}
-@media(max-width:640px){.article-page{padding:22px 14px 34px}.article-hero h1{font-size:24px}.article-card-full{padding:18px 15px}}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="brand-row">
-    <svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-      <rect fill="#0c3327" height="38" rx="8" stroke="#b8863b" stroke-width="1.4" width="38" x="1" y="1"/>
-      <g fill="none" stroke="#e4c891" stroke-linecap="round" stroke-width="1.6" transform="translate(20,20)">
-        <path d="M-2,-11 C7,-11 13,-5 13,2 C13,9 7,14 0,14"/>
-        <path d="M-4,-9 C-11,-7 -15,-1 -14,6 C-13,12 -8,16 -2,16"/>
-        <path d="M2,-8 C8,-8 12,-4 11,2 C10,7 6,10 1,10"/>
-        <path d="M0,-5 C4,-6 7,-3 6,1 C5,4 2,6 -1,5"/>
-      </g>
-      <circle cx="20" cy="20" fill="#b8863b" r="1.6"/>
-    </svg>
-    <div class="brand-text"><strong>FeeGuide</strong><span>Pakistan · Identity Documents</span></div>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="nicop-fees.html">NICOP</a>
-    <a href="cnic-application-guide.html">CNIC Guide</a>
-    <a href="duplicate-cnic.html">Duplicate CNIC</a>
-    <a href="track-cnic.html">Track CNIC</a>
-    <a href="e-passport-fees.html">E-Passport</a>
-    <a href="succession-certificate.html">Succession</a>
-    <a href="documents-required.html">Documents</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<div class="brand-row">
+<svg class="brand-mark" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#0c3327" height="38" rx="8" stroke="#b8863b" stroke-width="1.4" width="38" x="1" y="1"></rect>
+<g fill="none" stroke="#e4c891" stroke-linecap="round" stroke-width="1.6" transform="translate(20,20)">
+<path d="M-2,-11 C7,-11 13,-5 13,2 C13,9 7,14 0,14"></path>
+<path d="M-4,-9 C-11,-7 -15,-1 -14,6 C-13,12 -8,16 -2,16"></path>
+<path d="M2,-8 C8,-8 12,-4 11,2 C10,7 6,10 1,10"></path>
+<path d="M0,-5 C4,-6 7,-3 6,1 C5,4 2,6 -1,5"></path>
+</g>
+<circle cx="20" cy="20" fill="#b8863b" r="1.6"></circle>
+</svg>
+<div class="brand-text">
+<strong>FeeGuide</strong>
+<span>Pakistan · Identity Documents</span>
+</div>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="nicop-fees.html">NICOP</a>
+<a href="cnic-application-guide.html">CNIC Guide</a>
+<a href="duplicate-cnic.html">Duplicate CNIC</a>
+<a href="track-cnic.html">Track CNIC</a>
+<a href="e-passport-fees.html">E-Passport</a>
+<a href="succession-certificate.html">Succession</a>
+<a href="documents-required.html">Documents</a>
+<a href="first-time-cnic-documents.html">First CNIC</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
+<section class="article-hero">
+<div class="eyebrow">About Us</div>
+<h1>About FeeGuide</h1>
+<p>An independent resource built to make NADRA and passport fee information clear and accessible.</p>
+<div class="article-meta"><span>Last checked · 2026</span><span>·</span><span>Independent Guide</span></div>
+</section>
+<div class="content">
 
-<main class="article-page">
-  <section class="article-hero">
-    <div class="eyebrow">FeeGuide · Pakistan · 2026</div>
-    <h1>About FeeGuide</h1>
-    <p>Clear, practical information in the same design as the FeeGuide homepage.</p>
-  </section>
-  <article class="article-card-full">
-    <h2>Independent information resource</h2>
-<p>FeeGuide provides plain-language guides about Pakistani identity documents, NADRA services and passport-related procedures.</p>
-<h3>Our approach</h3><p>We aim to make complicated service information easier to understand and highlight where readers should confirm current details with the official authority.</p>
-<h3>Not an official government website</h3><p>FeeGuide is independent and is not NADRA, DGIP or another government department. Official fees and requirements take priority over anything published here.</p>
-    <a class="back" href="index.html">← Back to FeeGuide Home</a>
-  </article>
-</main>
+<h2>Our Mission</h2>
+<p>FeeGuide was created to solve a simple but common problem: finding accurate, up-to-date fee information for NADRA and passport services in one place, without digging through scattered forum posts or outdated articles. Every guide on this site is written to answer the exact questions people search for — what does it cost, what documents do I need, and how long will it take.</p>
 
+<h2>What We Cover</h2>
+<ul>
+<li>Smart CNIC applications, renewals, and duplicates</li>
+<li>NICOP fees and processes for overseas Pakistanis</li>
+<li>e-Passport fee tables across all processing tiers</li>
+<li>Succession certificates and family registration documents</li>
+<li>Troubleshooting guidance for rejected or held applications</li>
+</ul>
+
+<h2>How We Research Our Guides</h2>
+<p>Each guide is built from NADRA's publicly available service pages, official fee schedules, and documented application procedures. Where a process has multiple paths — for example, the different documentation needed depending on whether a parent is alive, deceased, or unavailable — we break the guide down by situation rather than giving a single generic answer that may not apply to every reader.</p>
+
+<h2>Our Commitment to Accuracy</h2>
+<p>Fee schedules and processing requirements from government bodies change periodically. We review our published information against the latest publicly available NADRA and DGIP schedules and update our guides when changes occur. That said, we always recommend confirming exact figures on the official Pak-Identity portal before making any payment, since our team is independent and does not have real-time access to NADRA's internal systems.</p>
+
+<h2>Not an Official Government Website</h2>
+<div class="callout">FeeGuide is an independent informational website. We are not affiliated with, endorsed by, or officially connected to the National Database and Registration Authority (NADRA), the Directorate General of Immigration and Passports (DGIP), or any Pakistani government body. All official applications, payments, and biometric verifications must be completed through NADRA's official Pak-Identity portal or your nearest NADRA Registration Center. See our <a href="disclaimer.html">Disclaimer</a> for full details.</div>
+
+<h2>How This Site Is Funded</h2>
+<p>FeeGuide is supported through display advertising, which allows us to keep all our guides free to access. Advertising placements do not influence the accuracy or content of our fee information.</p>
+
+<h2>Get in Touch</h2>
+<p>If you notice outdated information, have a suggestion for a new guide, or spot an error, we welcome your feedback through our Contact page.</p>
+
+</div>
+<div class="related">
+<h2>Related Guides</h2>
+<div class="related-links">
+<a href="contact.html">Contact Us</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="documents-required.html">Documents Required — Full Checklist</a>
+</div>
+</div>
 <footer>
-  <div class="disclaim">FeeGuide is an independent informational website. Always confirm current fees, requirements and processing rules with the relevant official authority before applying.</div>
-  <div class="flinks">
-    <a href="about.html">About</a><a href="contact.html">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a>
-  </div>
-  <div class="copyright">© 2026 FeeGuide · Pakistan Identity Documents</div>
+<div class="disclaim">FeeGuide is an independent information resource and is not affiliated with or endorsed by NADRA. Fees are verified against multiple current sources but may change — always confirm on the official Pak-Identity portal (id.nadra.gov.pk) before paying.</div>
+<div class="flinks">
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="disclaimer.html">Disclaimer</a>
+</div>
+<div class="copyright">© 2026 FeeGuide. All rights reserved.</div>
 </footer>
-
 </body>
 </html>
