@@ -3,606 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NICOP Fees 2026 — Complete Fee Breakdown for Overseas Pakistanis | FeeGuide</title>
-<meta name="description" content="Full NICOP fee structure for overseas Pakistanis by zone and processing speed, plus documents required and how to pay online through Pak-Identity.">
+<title>NICOP Fees 2026 — Complete Fee Breakdown & Renewal Cost | FeeGuide</title>
+<meta name="description" content="Full NICOP fee structure for overseas Pakistanis by zone and processing speed, including the exact NICOP renewal fee, documents required, and how to pay online through Pak-Identity.">
 <style>
   :root{
-    --ink:#14261f;
-    --paper:#f6f3ec;
-    --card:#ffffff;
-    --green-deep:#0f3d2e;
-    --green-mid:#1f6b4a;
-    --gold:#b8863b;
-    --line:#dcd4c0;
-    --muted:#5c6b62;
+    --green:#1c3d2e;
+    --green-dark:#12271c;
+    --gold:#c9a24b;
+    --bg:#faf6ee;
+    --text:#2b2b28;
+    --muted:#6b6b63;
   }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Georgia', 'Noto Nastaliq Urdu', serif;
-    line-height:1.5;
-  }
-  a{color:inherit;text-decoration:none;}
-
-  /* Header */
-  header{
-    background:var(--green-deep);
-    color:#f4efe2;
-    padding:14px 18px;
-    position:sticky;
-    top:0;
-    z-index:20;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
-  }
-  .brand-row{
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .brand-mark{
-    width:38px;height:38px;
-    flex-shrink:0;
-  }
-  .brand-text{
-    font-family:'Trebuchet MS', sans-serif;
-    letter-spacing:.5px;
-  }
-  .brand-text strong{
-    display:block;
-    font-size:15px;
-  }
-  .brand-text span{
-    font-size:10.5px;
-    color:#c9bd9e;
-    text-transform:uppercase;
-    letter-spacing:1.5px;
-  }
-  nav{
-    display:flex;
-    overflow-x:auto;
-    gap:18px;
-    margin-top:12px;
-    padding-bottom:2px;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-  }
-  nav::-webkit-scrollbar{display:none;}
-  nav a{
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:12.5px;
-    white-space:nowrap;
-    color:#e4dcc4;
-    border-bottom:2px solid transparent;
-    padding-bottom:6px;
-  }
-  nav a:hover{border-bottom-color:var(--gold);}
-
-  /* Hero */
-  .hero{
-    padding:34px 18px 26px;
-    background:
-      radial-gradient(circle at 85% 0%, rgba(184,134,59,.10), transparent 55%),
-      var(--paper);
-    border-bottom:1px solid var(--line);
-  }
-
-  /* Green banner with illustration */
-  .id-banner{
-    background:var(--green-deep);
-    padding:26px 18px 30px;
-    position:relative;
-    overflow:hidden;
-  }
-  .id-banner-art{
-    display:block;
-    margin:0 auto;
-    width:100%;
-    max-width:300px;
-    height:auto;
-  }
-  .eyebrow{
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:11px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--green-mid);
-    font-weight:bold;
-  }
-  .hero h1{
-    font-size:29px;
-    line-height:1.18;
-    margin:10px 0 12px;
-    color:var(--green-deep);
-  }
-  .hero p{
-    font-size:15px;
-    color:var(--muted);
-    max-width:46ch;
-    margin:0 0 6px;
-  }
-  .hero-flex{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-  }
-  .hero-photo{
-    width:100%;
-    border-radius:8px;
-    overflow:hidden;
-    box-shadow:0 6px 20px rgba(15,61,46,.15);
-    border:1px solid var(--line);
-  }
-  .hero-photo img{width:100%;display:block;}
-  @media(min-width:640px){
-    .hero-flex{flex-direction:row-reverse;align-items:center;}
-    .hero-photo{width:40%;}
-    .hero-text{width:60%;}
-  }
-  .updated-tag{
-    display:inline-block;
-    margin-top:14px;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:11px;
-    letter-spacing:1px;
-    color:var(--gold);
-    border:1px solid var(--gold);
-    padding:4px 10px;
-    border-radius:20px;
-  }
-
-  /* Section headers */
-  .section-head{
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    padding:26px 18px 4px;
-  }
-  .section-head h2{
-    font-size:12px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--green-deep);
-    font-family:'Trebuchet MS', sans-serif;
-    margin:0;
-    border-bottom:2px solid var(--gold);
-    padding-bottom:6px;
-  }
-  .section-count{
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:11px;
-    color:var(--muted);
-  }
-
-  /* Featured card */
-  .featured{
-    margin:14px 18px 8px;
-    background:var(--green-deep);
-    color:#f4efe2;
-    border-radius:8px;
-    padding:22px 20px;
-    position:relative;
-    overflow:hidden;
-    box-shadow:0 6px 20px rgba(15,61,46,.18);
-    border:1px solid rgba(184,134,59,.35);
-  }
-  .featured::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:radial-gradient(circle at 100% 100%, rgba(184,134,59,.25), transparent 60%);
-  }
-  .featured-label{
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:10.5px;
-    letter-spacing:1.5px;
-    color:var(--gold);
-    text-transform:uppercase;
-  }
-  .featured h3{
-    font-size:20px;
-    margin:8px 0 8px;
-    position:relative;
-  }
-  .featured p{
-    font-size:13.5px;
-    color:#cfc7ac;
-    margin:0 0 14px;
-    position:relative;
-  }
-  .featured a.btn{
-    display:inline-block;
-    background:var(--gold);
-    color:var(--green-deep);
-    font-family:'Trebuchet MS', sans-serif;
-    font-weight:bold;
-    font-size:12.5px;
-    padding:9px 16px;
-    border-radius:4px;
-    position:relative;
-  }
-  .featured-img{
-    width:100%;
-    border-radius:6px;
-    overflow:hidden;
-    margin-bottom:14px;
-    border:1px solid rgba(184,134,59,.4);
-    position:relative;
-  }
-  .featured-img img{width:100%;display:block;}
-
-  /* Article grid */
-  .grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:14px;
-    padding:14px 18px 6px;
-  }
-  .article-card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:0 0 14px;
-    overflow:hidden;
-    box-shadow:0 1px 3px rgba(15,61,46,.06), 0 4px 14px rgba(15,61,46,.04);
-    transition:box-shadow .15s ease, transform .15s ease;
-  }
-  .article-card:active{
-    box-shadow:0 2px 6px rgba(15,61,46,.1);
-    transform:translateY(1px);
-  }
-  .thumb{
-    width:100%;
-    min-height:110px;
-    background:linear-gradient(135deg,#12463a,#0c3327);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-bottom:2px solid var(--gold);
-    overflow:hidden;
-  }
-  .thumb svg{width:52px;height:52px;}
-  .thumb svg.wide-icon{width:100%;height:100%;max-height:110px;}
-  .thumb img{width:100%;height:auto;max-height:220px;object-fit:contain;display:block;}
-  .article-body{padding:14px 16px 0;}
-  .cat-tag{
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:10px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-weight:bold;
-  }
-  .article-card h3{
-    font-size:16.5px;
-    margin:6px 0 6px;
-    color:var(--green-deep);
-    line-height:1.3;
-  }
-  .article-card p{
-    font-size:13px;
-    color:var(--muted);
-    margin:0 0 10px;
-  }
-  .read-more{
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:12px;
-    font-weight:bold;
-    color:var(--green-mid);
-  }
-  .read-more::after{content:" →";}
-
-  /* Category divider strip */
-  .strip{
-    margin:30px 18px 0;
-    padding:9px 14px;
-    background:var(--green-mid);
-    color:#eef4ef;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:11px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    border-radius:5px;
-    box-shadow:0 2px 8px rgba(31,107,74,.2);
-  }
-
-  footer{
-    margin-top:36px;
-    background:var(--green-deep);
-    color:#c9bd9e;
-    padding:26px 18px 22px;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:12px;
-  }
-  footer .disclaim{
-    color:#8fa595;
-    font-size:11px;
-    line-height:1.6;
-    margin-bottom:14px;
-  }
-  footer .flinks{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px 16px;
-    margin-bottom:16px;
-  }
-  footer .flinks a{color:#e4dcc4;}
-  footer .copyright{
-    border-top:1px solid rgba(255,255,255,.1);
-    padding-top:14px;
-    font-size:11px;
-    color:#7d9184;
-  }
-
-  @media(min-width:640px){
-    .grid{grid-template-columns:1fr 1fr;}
-    .hero h1{font-size:36px;}
-  }
-
-/* Final image/card fixes */
-.thumb{background:#fff !important;overflow:hidden !important;}
-.thumb img{width:100% !important;height:220px !important;max-height:none !important;object-fit:cover !important;display:block !important;margin:0 !important;background:#fff !important;}
-@media (max-width:760px){.thumb img{height:190px !important;object-fit:cover !important;}}
-.featured-img{background:#fff !important;overflow:hidden !important;}
-
-/* Requested top hero image */
-.id-banner-photo{width:100% !important;max-width:none !important;height:auto !important;margin:0 !important;display:block !important;}
-.id-banner{padding:0 !important;}
-
-  /* Article page additions */
-  .article-hero{
-    padding:28px 18px 22px;
-    background:var(--green-deep);
-    color:#f4efe2;
-  }
-  .article-hero .eyebrow{color:var(--gold);}
-  .article-hero h1{
-    font-size:24px;
-    line-height:1.25;
-    margin:8px 0 10px;
-    color:#f4efe2;
-  }
-  .article-hero p{
-    font-size:13.5px;
-    color:#cfc7ac;
-    margin:0;
-  }
-  .article-meta{
-    display:flex;
-    gap:14px;
-    margin-top:14px;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:11px;
-    color:#b8863b;
-  }
-  .content{
-    padding:22px 18px;
-    max-width:720px;
-    margin:0 auto;
-  }
-  .content h2{
-    font-size:19px;
-    color:var(--green-deep);
-    margin:26px 0 10px;
-    border-left:4px solid var(--gold);
-    padding-left:10px;
-  }
-  .content h2:first-child{margin-top:0;}
-  .content h3{
-    font-size:15.5px;
-    color:var(--green-mid);
-    margin:18px 0 6px;
-  }
-  .content p{
-    font-size:14.5px;
-    line-height:1.65;
-    color:var(--ink);
-    margin:0 0 12px;
-  }
-  .content ul, .content ol{
-    margin:0 0 14px;
-    padding-left:20px;
-  }
-  .content li{
-    font-size:14px;
-    line-height:1.6;
-    margin-bottom:6px;
-    color:var(--ink);
-  }
-  table.fee-table{
-    width:100%;
-    border-collapse:collapse;
-    margin:12px 0 18px;
-    font-size:13px;
-    box-shadow:0 1px 4px rgba(15,61,46,.08);
-  }
-  table.fee-table th{
-    background:var(--green-deep);
-    color:#f4efe2;
-    padding:9px 8px;
-    text-align:left;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:11.5px;
-  }
-  table.fee-table td{
-    padding:8px;
-    border-bottom:1px solid var(--line);
-    background:#fff;
-  }
-  table.fee-table tr:nth-child(even) td{background:#faf8f2;}
-  .callout{
-    background:#faf6ea;
-    border-left:4px solid var(--gold);
-    padding:12px 14px;
-    margin:14px 0;
-    font-size:13.5px;
-    border-radius:4px;
-    color:var(--ink);
-  }
-  .faq-item{
-    border-bottom:1px solid var(--line);
-    padding:12px 0;
-  }
-  .faq-item h3{margin-top:0;}
-  .faq-item p{margin-bottom:0;color:var(--muted);font-size:13.5px;}
-  .related{
-    background:var(--paper);
-    padding:20px 18px 4px;
-    border-top:1px solid var(--line);
-  }
-  .related h2{
-    font-size:12px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--green-deep);
-    font-family:'Trebuchet MS', sans-serif;
-    margin:0 0 14px;
-    border-bottom:2px solid var(--gold);
-    padding-bottom:6px;
-    display:inline-block;
-  }
-  .related-links{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    padding-bottom:20px;
-  }
-  .related-links a{
-    font-size:13.5px;
-    color:var(--green-mid);
-    font-weight:bold;
-  }
-  .related-links a::after{content:" →";}
-
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);line-height:1.7;}
+  header{background:var(--green);color:#fff;padding:18px 24px;}
+  header .brand{font-size:1.4rem;font-weight:bold;letter-spacing:0.5px;}
+  header .tagline{font-size:0.8rem;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;}
+  nav a{color:#e6e6e0;text-decoration:none;font-family:Arial, sans-serif;font-size:0.85rem;margin-right:16px;display:inline-block;padding:4px 0;}
+  nav a:hover{color:var(--gold);}
+  main{max-width:760px;margin:0 auto;padding:32px 20px 60px;}
+  .eyebrow{font-family:Arial, sans-serif;text-transform:uppercase;letter-spacing:1px;font-size:0.75rem;color:var(--green);font-weight:bold;}
+  h1{font-size:2rem;color:var(--green-dark);margin:10px 0 6px;line-height:1.25;}
+  .meta{font-family:Arial, sans-serif;font-size:0.8rem;color:var(--muted);margin-bottom:24px;}
+  h2{font-size:1.35rem;color:var(--green-dark);margin:32px 0 12px;border-bottom:2px solid var(--gold);padding-bottom:6px;}
+  h3{font-size:1.1rem;color:var(--green);margin:20px 0 8px;}
+  p{margin-bottom:14px;}
+  ul, ol{margin:0 0 16px 22px;}
+  li{margin-bottom:8px;}
+  table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-family:Arial, sans-serif;font-size:0.88rem;}
+  th, td{border:1px solid #d8d2c2;padding:10px 10px;text-align:left;}
+  th{background:var(--green);color:#fff;font-weight:600;}
+  tr:nth-child(even){background:#f2ede0;}
+  .callout{background:#eef3ec;border-left:4px solid var(--green);padding:14px 18px;margin:20px 0;font-family:Arial, sans-serif;font-size:0.92rem;}
+  .related{font-family:Arial, sans-serif;font-size:0.9rem;margin-top:32px;}
+  .related a{color:var(--green);display:block;margin-bottom:6px;}
+  footer{background:var(--green-dark);color:#cfd6cf;font-family:Arial, sans-serif;font-size:0.8rem;padding:24px 20px;text-align:center;}
+  footer a{color:var(--gold);text-decoration:none;margin:0 8px;}
+  .disclaimer{max-width:760px;margin:0 auto 20px;padding:0 20px;font-family:Arial, sans-serif;font-size:0.8rem;color:var(--muted);}
 </style>
 </head>
 <body>
+
 <header>
-<div class="brand-row">
-<svg class="brand-mark" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#0c3327" height="38" rx="8" stroke="#b8863b" stroke-width="1.4" width="38" x="1" y="1"></rect>
-<g fill="none" stroke="#e4c891" stroke-linecap="round" stroke-width="1.6" transform="translate(20,20)">
-<path d="M-2,-11 C7,-11 13,-5 13,2 C13,9 7,14 0,14"></path>
-<path d="M-4,-9 C-11,-7 -15,-1 -14,6 C-13,12 -8,16 -2,16"></path>
-<path d="M2,-8 C8,-8 12,-4 11,2 C10,7 6,10 1,10"></path>
-<path d="M0,-5 C4,-6 7,-3 6,1 C5,4 2,6 -1,5"></path>
-</g>
-<circle cx="20" cy="20" fill="#b8863b" r="1.6"></circle>
-</svg>
-<div class="brand-text">
-<strong>FeeGuide</strong>
-<span>Pakistan · Identity Documents</span>
-</div>
-</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="nicop-fees.html">NICOP</a>
-<a href="cnic-application-guide.html">CNIC Guide</a>
-<a href="duplicate-cnic.html">Duplicate CNIC</a>
-<a href="track-cnic.html">Track CNIC</a>
-<a href="e-passport-fees.html">E-Passport</a>
-<a href="succession-certificate.html">Succession</a>
-<a href="documents-required.html">Documents</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <div class="brand">FeeGuide</div>
+  <div class="tagline">Pakistan · Identity Documents</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="nicop-fees.html">NICOP</a>
+    <a href="cnic-application-guide.html">CNIC Guide</a>
+    <a href="duplicate-cnic.html">Duplicate CNIC</a>
+    <a href="track-cnic.html">Track CNIC</a>
+    <a href="e-passport-fees.html">E-Passport</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
-<section class="article-hero">
-<div class="eyebrow">NICOP · Overseas Pakistanis</div>
-<h1>NICOP Fees 2026 — Complete Breakdown</h1>
-<p>Everything an overseas Pakistani needs to know about NICOP fees, processing tiers, and how to pay from abroad.</p>
-<div class="article-meta"><span>Last checked · 2026</span><span>·</span><span>Independent Guide</span></div>
-</section>
-<div class="content">
 
-<h2>What Is a NICOP?</h2>
-<p>The National Identity Card for Overseas Pakistanis (NICOP) is issued by NADRA to Pakistani citizens who hold dual nationality or live permanently abroad. It serves the same purpose as a domestic CNIC — proving identity and citizenship — but is designed for use while residing outside Pakistan, and it also acts as a travel-friendly identity document at immigration counters.</p>
-<h2>Who Exactly Counts as an "Overseas Pakistani"?</h2>
-<p>NICOP isn't just for people who moved abroad permanently — NADRA recognizes several distinct categories under Section 12 of the NADRA Ordinance, which specifically covers citizens who reside abroad or intend to reside abroad.</p>
+<main>
+  <div class="eyebrow">NICOP · Overseas Pakistanis</div>
+  <h1>NICOP Fees 2026 — Complete Breakdown</h1>
+  <div class="meta">Last checked · 2026 &nbsp;·&nbsp; Independent Guide</div>
 
-<p><strong>Students studying abroad:</strong> If you're pursuing higher education overseas — especially PhD or Bachelor's programs that typically run 3-4 years or longer — you fall into this category, since your stay abroad extends well beyond a short visit.</p>
+  <p>Everything an overseas Pakistani needs to know about NICOP fees, processing tiers, renewal costs, and how to pay from abroad.</p>
 
-<p><strong>Overseas workers and laborers:</strong> A large number of Pakistanis work in the Middle East, Malaysia, and similar countries on work visas. These individuals are not citizens or permanent residents of the host country — their stay is tied directly to their employment, and they're expected to return once that work period ends.</p>
+  <h2>What Is a NICOP?</h2>
+  <p>The National Identity Card for Overseas Pakistanis (NICOP) is issued by NADRA to Pakistani citizens who hold dual nationality or live permanently abroad. It serves the same purpose as a domestic CNIC — proving identity and citizenship — but is designed for use while residing outside Pakistan, and it also acts as a travel-friendly identity document at immigration counters.</p>
 
-<p><strong>Dual nationals:</strong> Pakistanis who have acquired citizenship of a country that has a dual-nationality agreement with Pakistan (such as the USA or UK) can legally hold both nationalities. For this group, NICOP serves as their Pakistani identity document while abroad.</p>
+  <h2>Who Exactly Counts as an "Overseas Pakistani"?</h2>
+  <p>NICOP isn't just for people who moved abroad permanently — NADRA recognizes several distinct categories under Section 12 of the NADRA Ordinance, which specifically covers citizens who reside abroad or intend to reside abroad.</p>
+  <p><strong>Students studying abroad:</strong> If you're pursuing higher education overseas — especially PhD or Bachelor's programs that typically run 3-4 years or longer — you fall into this category, since your stay abroad extends well beyond a short visit.</p>
+  <p><strong>Overseas workers and laborers:</strong> A large number of Pakistanis work in the Middle East, Malaysia, and similar countries on work visas. These individuals are not citizens or permanent residents of the host country — their stay is tied directly to their employment, and they're expected to return once that work period ends.</p>
+  <p><strong>Dual nationals:</strong> Pakistanis who have acquired citizenship of a country that has a dual-nationality agreement with Pakistan (such as the USA or UK) can legally hold both nationalities. For this group, NICOP serves as their Pakistani identity document while abroad.</p>
+  <p><strong>Spouses of foreign nationals:</strong> If a Pakistani citizen marries someone from another country, that foreign spouse often needs a travel document to enter Pakistan without a visa, open a bank account, and handle other routine matters — similar to how any Pakistani citizen would.</p>
 
-<p><strong>Spouses of foreign nationals:</strong> If a Pakistani citizen marries someone from another country, that foreign spouse often needs a travel document to enter Pakistan without a visa, open a bank account, and handle other routine matters — similar to how any Pakistani citizen would.</p>
+  <h2>NICOP vs POC vs CNIC — What's the Difference?</h2>
+  <ul>
+    <li><strong>CNIC</strong> — for citizens residing inside Pakistan</li>
+    <li><strong>NICOP</strong> — for Pakistani citizens who hold dual nationality with a country that has a formal dual-nationality agreement with Pakistan</li>
+    <li><strong>POC (Pakistan Origin Card)</strong> — for people of Pakistani origin who've taken citizenship of a country without a dual-nationality agreement with Pakistan, meaning they had to renounce their Pakistani citizenship to become a citizen there</li>
+  </ul>
 
-<h2>NICOP vs POC vs CNIC — What's the Difference?</h2>
-<p>NADRA issues three distinct cards depending on your citizenship and residency situation:</p>
-<ul>
-  <li><strong>CNIC</strong> — for citizens residing inside Pakistan</li>
-  <li><strong>NICOP</strong> — for Pakistani citizens who hold dual nationality with a country that has a formal dual-nationality agreement with Pakistan</li>
-  <li><strong>POC (Pakistan Origin Card)</strong> — for people of Pakistani origin who've taken citizenship of a country <em>without</em> a dual-nationality agreement with Pakistan, meaning they had to renounce their Pakistani citizenship to become a citizen there</li>
-</ul>
+  <h2>NICOP Fee Structure by Zone</h2>
+  <p>NADRA groups countries into two pricing zones. Zone A covers higher-income countries such as the United States, United Kingdom, and Canada, while Zone B covers countries such as the UAE and Saudi Arabia. Fees are charged in USD and vary by processing speed. The same fee schedule applies whether you're applying for a NICOP for the first time, modifying details, replacing a lost card, or renewing an expiring one.</p>
+  <table>
+    <thead>
+      <tr><th>Processing Type</th><th>Zone A (US/UK/Canada)</th><th>Zone B (UAE/Saudi/Africa)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Normal (31 days)</td><td>$39</td><td>$20</td></tr>
+      <tr><td>Urgent (23 days)</td><td>$57</td><td>$30</td></tr>
+      <tr><td>Executive (9 days)</td><td>$75</td><td>$40</td></tr>
+    </tbody>
+  </table>
+  <p>Processing time for Normal applications typically runs 30–45 days from the date biometrics are submitted, Urgent around 15–20 days, and Executive around 7–10 days, though delivery to your address abroad can add extra time depending on the courier used by your local mission.</p>
 
-<h2>Documents Required for NICOP by Applicant Type</h2>
-<p>Because "overseas Pakistani" covers several different situations, NADRA asks for different supporting documents depending on which category applies to you:</p>
-<ul>
-  <li><strong>If born abroad:</strong> proof of birth outside Pakistan, along with documentation proving your parents hold Pakistani citizenship</li>
-  <li><strong>If living abroad for work or study:</strong> your foreign passport, residence permit, or a formal undertaking attested by the Pakistani embassy in that country confirming your reason for residing abroad</li>
-  <li><strong>For minors under 18:</strong> the law allows a minor to use their parents' declared address without needing separate independent proof, since minors are presumed to reside wherever their parents reside</li>
-  <li><strong>If you've renounced Pakistani citizenship for another country's citizenship:</strong> you'll need to provide your foreign passport, along with documents confirming your prior Pakistani citizenship and parentage</li>
-</ul>
+  <h2>NICOP Renewal Fee — What You'll Pay to Renew</h2>
+  <p>A NICOP is valid for 10 years for adult applicants, and once it expires it must be renewed before it can be used for visa-free travel, banking, or property matters in Pakistan. The good news: NADRA does not charge a separate "renewal" rate — renewing an expired or soon-to-expire NICOP costs exactly the same as applying for a new one, based on your zone and chosen processing speed.</p>
+  <table>
+    <thead>
+      <tr><th>Renewal Processing Type</th><th>Zone A</th><th>Zone B</th><th>Processing Time</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Normal</td><td>$39</td><td>$20</td><td>31 days</td></tr>
+      <tr><td>Urgent</td><td>$57</td><td>$30</td><td>23 days</td></tr>
+      <tr><td>Executive</td><td>$75</td><td>$40</td><td>9 days</td></tr>
+    </tbody>
+  </table>
+  <div class="callout">
+    <strong>Renewing early matters:</strong> You generally cannot travel visa-free into Pakistan on an expired NICOP, and airlines may deny boarding entirely. It's worth starting the renewal process at least 2–3 months before expiry, especially if you're choosing Normal processing, since it can take over a month to complete.
+  </div>
 
-<p>Because requirements vary by case, it's worth confirming your exact document checklist with your nearest Pakistani embassy or NADRA office before applying, since NADRA officers assess each application against the specific category it falls under.</p>
-<h2>NICOP Fee Structure by Zone</h2>
-<p>NADRA groups countries into two pricing zones. Zone A covers higher-income countries such as the United States, United Kingdom, and Canada, while Zone B covers countries such as the UAE and Saudi Arabia. Fees are charged in USD and vary by processing speed.</p>
-<table class="fee-table">
-<tr><th>Processing Type</th><th>Zone A (US/UK/Canada)</th><th>Zone B (UAE/Saudi/Africa)</th></tr>
-<tr><td>Normal</td><td>$39</td><td>$20</td></tr>
-<tr><td>Urgent</td><td>$57</td><td>$30</td></tr>
-<tr><td>Executive</td><td>$75</td><td>$40</td></tr>
-</table>
-<p>Processing time for Normal applications typically runs 30–45 days from the date biometrics are submitted, Urgent around 15–20 days, and Executive around 7–10 days, though delivery to your address abroad can add extra time depending on the courier used by your local mission.</p>
+  <h2>Documents Required for NICOP by Applicant Type</h2>
+  <p>Because "overseas Pakistani" covers several different situations, NADRA asks for different supporting documents depending on which category applies to you:</p>
+  <ul>
+    <li><strong>If born abroad:</strong> proof of birth outside Pakistan, along with documentation proving your parents hold Pakistani citizenship</li>
+    <li><strong>If living abroad for work or study:</strong> your foreign passport, residence permit, or a formal undertaking attested by the Pakistani embassy in that country confirming your reason for residing abroad</li>
+    <li><strong>For minors under 18:</strong> the law allows a minor to use their parents' declared address without needing separate independent proof, since minors are presumed to reside wherever their parents reside</li>
+    <li><strong>If renewing:</strong> your original expiring or expired NICOP, along with your current foreign passport</li>
+  </ul>
 
-<h2>Documents Required for NICOP</h2>
-<ul>
-<li>Valid original CNIC or expired CNIC of the applicant</li>
-<li>Original valid passport showing current overseas residency status</li>
-<li>Proof of foreign nationality or residency (green card, work visa, residence permit)</li>
-<li>Passport-sized photograph as per NADRA specifications</li>
-<li>Original NICOP (if renewing)</li>
-</ul>
+  <h2>Documents Required for NICOP</h2>
+  <ul>
+    <li>Valid original CNIC or expired CNIC of the applicant</li>
+    <li>Original valid passport showing current overseas residency status</li>
+    <li>Proof of foreign nationality or residency (green card, work visa, residence permit)</li>
+    <li>Passport-sized photograph as per NADRA specifications</li>
+    <li>Original NICOP (if renewing)</li>
+  </ul>
 
-<h2>How to Apply — Step by Step</h2>
-<ol>
-<li>Create or log in to your account on the Pak-Identity portal</li>
-<li>Select the NICOP service and choose your processing tier</li>
-<li>Fill in the application form with your current overseas address</li>
-<li>Upload scanned copies of the required documents</li>
-<li>Book an appointment at your nearest Pakistani embassy, consulate, or NADRA overseas center for biometric verification</li>
-<li>Pay the applicable fee online and submit the form</li>
-</ol>
+  <h2>How to Apply — Step by Step</h2>
+  <ol>
+    <li>Create or log in to your account on the Pak-Identity portal</li>
+    <li>Select the NICOP service and choose your processing tier — this same flow applies whether it's a new application or a renewal</li>
+    <li>Fill in the application form with your current overseas address</li>
+    <li>Upload scanned copies of the required documents</li>
+    <li>Book an appointment at your nearest Pakistani embassy, consulate, or NADRA overseas center for biometric verification</li>
+    <li>Pay the applicable fee online and submit the form</li>
+  </ol>
 
-<h2>How to Pay the NICOP Fee</h2>
-<p>Payment can be made directly through the Pak-Identity portal using an international debit or credit card. Some overseas centers also accept bank wire transfers, and a growing number support local payment rails in countries where NADRA has expanded partnerships, though credit or debit card remains the most reliable option for most applicants.</p>
+  <h2>How to Pay the NICOP Fee</h2>
+  <p>Payment can be made directly through the Pak-Identity portal using an international debit or credit card. Some overseas centers also accept bank wire transfers, and a growing number support local payment rails in countries where NADRA has expanded partnerships, though credit or debit card remains the most reliable option for most applicants.</p>
+  <p>Fees listed above are current as of the latest publicly available NADRA schedule. Since NADRA periodically revises international fees to account for currency fluctuations, always confirm the exact amount on the official portal before paying.</p>
 
-<div class="callout">Fees listed above are current as of the latest publicly available NADRA schedule. Since NADRA periodically revises international fees to account for currency fluctuations, always confirm the exact amount on the official portal before paying.</div>
+  <h2>Frequently Asked Questions</h2>
+  <h3>How much is the NADRA fee to renew a NICOP?</h3>
+  <p>Renewal costs the same as a new application — $39 to $75 for Zone A countries, or $20 to $40 for Zone B countries, depending on your chosen processing speed.</p>
+  <h3>Can I apply for NICOP without visiting Pakistan?</h3>
+  <p>Yes. NICOP applications are specifically designed to be completed at Pakistani missions abroad, so a trip to Pakistan is not required.</p>
+  <h3>How long is a NICOP valid for?</h3>
+  <p>NICOP cards are typically valid for 10 years for adults, similar to the standard CNIC validity period.</p>
+  <h3>What happens if my NICOP application is rejected?</h3>
+  <p>You will receive a rejection reason through your Pak-Identity account, most commonly related to unclear documents or biometric mismatches, and you can correct and resubmit.</p>
 
-<h2>Frequently Asked Questions</h2>
-<div class="faq-item"><h3>Can I apply for NICOP without visiting Pakistan?</h3><p>Yes. NICOP applications are specifically designed to be completed at Pakistani missions abroad, so a trip to Pakistan is not required.</p></div>
-<div class="faq-item"><h3>How long is a NICOP valid for?</h3><p>NICOP cards are typically valid for 10 years for adults, similar to the standard CNIC validity period.</p></div>
-<div class="faq-item"><h3>What happens if my NICOP application is rejected?</h3><p>You will receive a rejection reason through your Pak-Identity account, most commonly related to unclear documents or biometric mismatches, and you can correct and resubmit.</p></div>
+  <div class="related">
+    <strong>Related Guides</strong>
+    <a href="cnic-application-guide.html">CNIC Application Guide</a>
+    <a href="e-passport-fees.html">E-Passport Fees 2026</a>
+    <a href="documents-required.html">Documents Required — Full Checklist</a>
+  </div>
+</main>
 
-</div>
-<div class="related">
-<h2>Related Guides</h2>
-<div class="related-links">
-<a href="cnic-application-guide.html">CNIC Application Guide</a>
-<a href="e-passport-fees.html">E-Passport Fees 2026</a>
-<a href="documents-required.html">Documents Required — Full Checklist</a>
-</div>
-</div>
+<p class="disclaimer">FeeGuide is an independent information resource and is not affiliated with or endorsed by NADRA. Fees are verified against multiple current sources but may change — always confirm on the official Pak-Identity portal (id.nadra.gov.pk) before paying.</p>
+
 <footer>
-<div class="disclaim">FeeGuide is an independent information resource and is not affiliated with or endorsed by NADRA. Fees are verified against multiple current sources but may change — always confirm on the official Pak-Identity portal (id.nadra.gov.pk) before paying.</div>
-<div class="flinks">
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="privacy-policy.html">Privacy Policy</a>
-</div>
-<div class="copyright">© 2026 FeeGuide. All rights reserved.</div>
+  <div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <div style="margin-top:10px;">© 2026 FeeGuide. All rights reserved.</div>
 </footer>
+
 </body>
-</html>
+  </html>
+    
