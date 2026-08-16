@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dashingkhurram0334-prog.github.io/sitemap.xml
+Sitemap: https://cnicfeeguide.com/sitemap.xml
