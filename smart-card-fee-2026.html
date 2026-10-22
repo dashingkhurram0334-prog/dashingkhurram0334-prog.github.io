@@ -617,34 +617,9 @@
   <div style="font-size:20px;margin-top:6px;">Total: <strong id="fc-total"></strong></div>
   <p style="margin:12px 0 0;font-size:12px;color:#555;">Fees can change. Confirm on the official NADRA website before paying.</p>
 </div>
-
-<script>
-(function () {
-  // EDIT HERE: change fees and date whenever NADRA updates them
-  var LAST_UPDATED = "22 Oct 2026";
-  var FEES = [
-    { name: "Normal", fee: 750 },
-    { name: "Urgent", fee: 1500 },
-    { name: "Executive", fee: 2500 }
-  ];
-
-  var type = document.getElementById("fc-type");
-  var count = document.getElementById("fc-count");
-  document.getElementById("fc-date").textContent = LAST_UPDATED;
-
-  FEES.forEach(function (f, i) {
-    var o = document.createElement("option");
-    o.value = i;
-    o.textContent = f.name + " (Rs. " + f.fee.toLocaleString("en-US") + ")";
-    document.getElementById("fc-total").textContent = "Rs. " + (f * n).toLocaleString("en-US");
-  }
-  type.addEventListener("change", update);
-  count.addEventListener("input", update);
-  update();
-})();
 </script>
-  
-<h2 id="smart-cnic-fee">Smart Card Fee 2026 — At a Glance</h2>
+
+  <h2 id="smart-cnic-fee">Smart Card Fee 2026 — At a Glance</h2>
 <p>The Smart CNIC (Computerized National Identity Card) fee in Pakistan depends on two things: which processing speed you choose, and which type of card you're applying for — a new card, a renewal, a B-Form for a child, or a Family Registration Certificate. The table below covers the standard Smart CNIC fee that most applicants search for.</p>
 
 <table class="fee-table">
