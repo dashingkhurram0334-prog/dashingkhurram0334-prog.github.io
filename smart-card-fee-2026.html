@@ -603,7 +603,41 @@
 <div class="article-meta" style="margin-top:8px;"><a href="#smart-cnic-fee" style="color:#e4c891;text-decoration:underline;">Jump to Smart CNIC Fee</a><span>·</span><a href="#cnic-fee" style="color:#e4c891;text-decoration:underline;">Jump to CNIC Fee</a></div>
 </section>
 <div class="content">
+<!-- Smart Card Fee Calculator: paste this where you want it on your page -->
+<div id="fee-calc" style="max-width:420px;margin:16px 0;padding:16px;border:1px solid #c9d3cc;border-radius:8px;font-family:system-ui,sans-serif;">
+  <h3 style="margin:0 0 4px;font-size:18px;">Smart Card Fee Calculator</h3>
+  <p style="margin:0 0 12px;font-size:13px;color:#555;">Last updated: <span id="fc-date"></span></p>
 
+  <label for="fc-type" style="font-size:14px;">Service type</label>
+  <select id="fc-type" style="display:block;width:100%;padding:10px;margin:6px 0 12px;font-size:16px;"></select>
+
+  <label for="fc-count" style="font-size:14px;">Number of cards</label>
+  <input id="fc-count" type="number" min="1" value="1" style="display:block;width:100%;padding:10px;margin:6px 0 12px;font-size:16px;box-sizing:border-box;">
+
+  <div style="font-size:14px;">Fee per card: <strong id="fc-each"></strong></div>
+  <div style="font-size:20px;margin-top:6px;">Total: <strong id="fc-total"></strong></div>
+  <p style="margin:12px 0 0;font-size:12px;color:#555;">Fees can change. Confirm on the official NADRA website before paying.</p>
+</div>
+
+<script>
+(function () {
+  // EDIT HERE: change fees and date whenever NADRA updates them
+  var LAST_UPDATED = "22 Oct 2026";
+  var FEES = [
+    { name: "Normal", fee: 750 },
+    { name: "Urgent", fee: 1500 },
+    { name: "Executive", fee: 2500 }
+  ];
+
+  var type = document.getElementById("fc-type");
+  var count = document.getElementById("fc-count");
+  document.getElementById("fc-date").textContent = LAST_UPDATED;
+
+  FEES.forEach(function (f, i) {
+    var o = document.createElement("option");
+    o.value = i;
+    o.textContent = f.name + " (Rs. " + f.fee.toLocaleString("en-US") + ")";
+    type.appendChild(o);
 <h2 id="smart-cnic-fee">Smart Card Fee 2026 — At a Glance</h2>
 <p>The Smart CNIC (Computerized National Identity Card) fee in Pakistan depends on two things: which processing speed you choose, and which type of card you're applying for — a new card, a renewal, a B-Form for a child, or a Family Registration Certificate. The table below covers the standard Smart CNIC fee that most applicants search for.</p>
 
