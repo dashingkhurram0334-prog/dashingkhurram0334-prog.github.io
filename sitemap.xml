@@ -1,123 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://cnicfeeguide.com/index.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://cnicfeeguide.com/</loc>
   </url>
-
   <url>
-    <loc>https://cnicfeeguide.com/cnic-application-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cnicfeeguide.com/smart-card-fee-2026.html</loc>
   </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/cnic-rejected-solutions.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/duplicate-cnic.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/track-cnic.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/cnic-change-of-address.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/nadra-iris-scan-service.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/first-time-cnic-documents.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/cnic-fresh-case-process.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/marital-status-change.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/nicop-fees.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/e-passport-fees.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/succession-certificate.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://cnicfeeguide.com/documents-required.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <url>
     <loc>https://cnicfeeguide.com/birth-certificate-fee.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://cnicfeeguide.com/crc-child-registration-certificate.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/nicop-fees.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/e-passport-fees.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/first-time-cnic-documents.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/documents-required.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/cnic-application-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/cnic-rejected-solutions.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/duplicate-cnic.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/track-cnic.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/cnic-change-of-address.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/nadra-iris-scan-service.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/cnic-fresh-case-process.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/marital-status-change.html</loc>
+  </url>
+  <url>
+    <loc>https://cnicfeeguide.com/succession-certificate.html</loc>
+  </url>
   <url>
     <loc>https://cnicfeeguide.com/about.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://cnicfeeguide.com/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://cnicfeeguide.com/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
   </url>
-
   <url>
     <loc>https://cnicfeeguide.com/disclaimer.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
   </url>
-
-  <url>
-  <loc>https://cnicfeeguide.com/smart-card-fee-2026.html</loc>
-  <lastmod>2026-08-21</lastmod>
-</url>
-
 </urlset>
